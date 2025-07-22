@@ -1,3 +1,12 @@
+AndyJin:
+  name: Andy Jin
+  title: Student
+  url: http://andyjin.website
+  image_url: https://avatars.githubusercontent.com/u/219800600?v=4
+  page: true
+  socials:
+    github: PlayWithAndyJin
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
@@ -23,4 +32,3 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
-
