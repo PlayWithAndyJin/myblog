@@ -124,12 +124,71 @@ const mirrorVendors = [
   },
 ];
 
+// Windows 数据
+const windowsList = [
+  { version: 'Windows 11', official: 'https://www.microsoft.com/software-download/windows11', third: 'magnet:?xt=urn:btih:bc18d66c6105ef2e81ae8e253bdbc5467aca79e1&dn=zh-cn_windows_11_consumer_editions_version_24h2_updated_july_2025_x64_dvd_a1f0681d.iso&xl=7204851712', status: '维护中', officialDown: true, lastUpdate: '至今' },
+  { version: 'Windows 10', official: 'https://www.microsoft.com/software-download/windows10', third: 'magnet:?xt=urn:btih:a07e6acd719e73aee87433a38c814955fec336e4&dn=zh-cn_windows_10_consumer_editions_version_22h2_updated_july_2025_x64_dvd_f841fba5.iso&xl=6969270272', status: '维护中', officialDown: true, lastUpdate: '至今' },
+  { version: 'Windows 8.1', official: '', third: 'ed2k://|file|cn_windows_8.1_with_update_x64_dvd_6051473.iso|4504475648|D66BEF759548656EDA981D902A957545|/', status: '停止维护', officialDown: false, lastUpdate: '2014-12' },
+  { version: 'Windows 8', official: '', third: 'ed2k://|file|cn_windows_8_x64_dvd_915407.iso|3652950016|5C7F8C212BD3A1827866563773A431C2|/', status: '停止维护', officialDown: false, lastUpdate: '2012-08' },
+  { version: 'Windows 7 64位', official: '', third: 'magnet:?xt=urn:btih:E86414F638E11104248108B155BE9408A8362509&dn=cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso&xl=3420557312', status: '停止维护', officialDown: false, lastUpdate: '2019-02' },
+  { version: 'Windows 7 32位', official: '', third: 'magnet:?xt=urn:btih:585DF592DE43A067C75CFE5A639B41FC3F24DA6F&dn=cn_windows_7_ultimate_with_sp1_x86_dvd_u_677486.iso&xl=2653276160', status: '停止维护', officialDown: false, lastUpdate: '2011-05' },
+  { version: 'Windows Vista 32位', official: '', third: 'ed2k://|file|cn_windows_vista_with_sp2_x86_dvd_x15-36326.iso|2930489344|B6B6B6B6B6B6B6B6B6B6B6B6B6B6B6B6|/', status: '停止维护', officialDown: false, lastUpdate: '2012-04' },
+  { version: 'Windows XP 32位', official: '', third: 'ed2k://|file|zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_x14-80404.iso|630239232|CD0900AFA058ACB6345761969CBCBFF4|/', status: '停止维护', officialDown: false, lastUpdate: '2010-12' },
+];
+
+// macOS 数据
+const macosList = [
+  { name: 'macOS Tahoe', releaseDate: '2025', latestVersion: '26 Beta 4', download: 'https://sysin.org/blog/macos-tahoe/', chip: 'Apple Silicon/Intel', remark: '当前处于公测期，建议使用 macOS 15.5' },
+  { name: 'macOS Sequoia', releaseDate: '2024', latestVersion: '15.5', download: 'https://sysin.org/blog/macOS-Sequoia/', chip: 'Apple Silicon/Intel', remark: '当前运行稳定，推荐使用' },
+  { name: 'macOS Sonoma', releaseDate: '2023', latestVersion: '14.7.6', download: 'https://sysin.org/blog/macOS-Sonoma/', chip: 'Apple Silicon/Intel', remark: '当前运行稳定，推荐使用' },
+  { name: 'macOS Ventura', releaseDate: '2022', latestVersion: '13.7.6', download: 'https://sysin.org/blog/macOS-Ventura/', chip: 'Apple Silicon/Intel', remark: '当前运行稳定，推荐使用' },
+  { name: 'macOS Monterey', releaseDate: '2021', latestVersion: '12.7.6', download: 'https://sysin.org/blog/macOS-Monterey/', chip: 'Apple Silicon/Intel', remark: '当前运行稳定，推荐使用' },
+  { name: 'macOS Big Sur', releaseDate: '2020', latestVersion: '11.7.10', download: 'https://sysin.org/blog/macOS-Big-Sur/', chip: 'Apple Silicon/Intel', remark: '当前运行稳定，推荐使用' },
+  { name: 'macOS Catalina', releaseDate: '2019', latestVersion: '10.15.7', download: 'https://sysin.org/blog/macOS-Catalina/', chip: 'Intel', remark: '' },
+  { name: 'macOS Mojave', releaseDate: '2018', latestVersion: '10.14.6', download: 'https://sysin.org/blog/macOS-Mojave/', chip: 'Intel', remark: '' },
+  { name: 'macOS High Sierra', releaseDate: '2017', latestVersion: '10.13.6', download: 'https://sysin.org/blog/macOS-High-Sierra/', chip: 'Intel', remark: '' },
+  { name: 'macOS Sierra', releaseDate: '2016', latestVersion: '10.12.6', download: 'https://sysin.org/blog/macOS-Sierra/', chip: 'Intel', remark: '' },
+  { name: 'OS X El Capitan', releaseDate: '2015', latestVersion: '10.11.6', download: 'https://sysin.org/blog/os-x', chip: 'Intel', remark: '' },
+  { name: 'OS X Yosemite', releaseDate: '2014', latestVersion: '10.10.5', download: 'https://sysin.org/blog/os-x', chip: 'Intel', remark: '' },
+  { name: 'OS X Mavericks', releaseDate: '2013', latestVersion: '10.9.5', download: 'https://sysin.org/blog/os-x', chip: 'Intel', remark: '' },
+  { name: 'OS X Mountain Lion', releaseDate: '2012', latestVersion: '10.8.5', download: 'https://sysin.org/blog/os-x', chip: 'Intel', remark: '' },
+  { name: 'Mac OS X Lion', releaseDate: '2010', latestVersion: '10.7.5', download: 'https://sysin.org/blog/mac-os-x', chip: 'Intel', remark: '' },
+];
+
+// Linux 数据
+const linuxList = [
+  { name: 'Ubuntu 官网', url: 'https://ubuntu.com/' },
+  { name: 'Debian 官网', url: 'https://www.debian.org/' },
+  { name: 'CentOS 官网', url: 'https://www.centos.org/' },
+  { name: 'Arch Linux 官网', url: 'https://www.archlinux.org/' },
+  { name: 'Deepin 官网', url: 'https://www.deepin.org/' },
+  { name: '统信UOS 官网', url: 'https://www.chinauos.com/' },
+  { name: 'openEuler 官网', url: 'https://www.openeuler.org/' },
+  { name: 'Fedora 官网', url: 'https://getfedora.org/' },
+  { name: 'Kali Linux 官网', url: 'https://www.kali.org/' },
+  { name: 'AlmaLinux 官网', url: 'https://almalinux.org/' },
+  { name: 'Rocky Linux 官网', url: 'https://rockylinux.org/' },
+  { name: 'Manjaro 官网', url: 'https://manjaro.org/' },
+  { name: 'openSUSE 官网', url: 'https://www.opensuse.org/' },
+  { name: 'Red Hat Enterprise Linux 官网', url: 'https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux' },
+  { name: 'Linux Mint 官网', url: 'https://linuxmint.com/' },
+  { name: 'Zorin OS 官网', url: 'https://zorin.com/os/' },
+  { name: 'elementary OS 官网', url: 'https://elementary.io/' },
+  { name: 'EndeavourOS 官网', url: 'https://endeavouros.com/' },
+  { name: 'Parrot OS 官网', url: 'https://www.parrotsec.org/' },
+  { name: 'Tails 官网', url: 'https://tails.net/' },
+];
+
 const categories = [
   {
     key: 'mirrors',
     label: '镜像源',
     content: (
       <div>
+        <div className="alert alert--info" style={{marginBottom: 24}}>
+          <strong>提示：</strong> 镜像源是各大高校和云服务商为开源软件、开发工具等提供的高速下载节点，能有效提升国内用户的软件包下载速度，减少因网络原因导致的安装失败。常用于 Python、Node.js、Linux 发行版、Docker 等生态的包管理和系统更新。<br/>
+          当前已收录 <b>清华大学镜像、阿里云镜像、中科大镜像、华为云镜像</b>，后续会不断补充更多主流镜像源，欢迎持续关注。
+        </div>
         {mirrorVendors.map(vendor => (
           <div key={vendor.name} style={{marginBottom: 32}}>
             <h3 style={{marginBottom: 8}}>
@@ -138,10 +197,10 @@ const categories = [
             <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit'}}>
               <thead>
                 <tr>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>镜像名称</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>说明</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>镜像地址-点击跳转</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>状态</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>镜像名称</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>说明</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>镜像地址-点击跳转</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>状态</th>
                 </tr>
               </thead>
               <tbody>
@@ -150,12 +209,12 @@ const categories = [
                   .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
                   .map(mirror => (
                     <tr key={mirror.url}>
-                      <td style={{padding: '6px 12px'}}>{mirror.name}</td>
-                      <td style={{padding: '6px 12px'}}>{mirror.desc}</td>
-                      <td style={{padding: '6px 12px'}}>
+                      <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{mirror.name}</td>
+                      <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{mirror.desc}</td>
+                      <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
                         <a href={mirror.url} target="_blank" rel="noopener">{mirror.url}</a>
                       </td>
-                      <td style={{padding: '6px 12px', textAlign: 'center', color: mirror.status === '离线' ? 'red' : undefined}}>{mirror.status}</td>
+                      <td style={{padding: '6px 12px', textAlign: 'center', color: mirror.status === '离线' ? 'red' : undefined, borderLeft: 'none', borderRight: 'none'}}>{mirror.status}</td>
                     </tr>
                   ))}
               </tbody>
@@ -167,14 +226,124 @@ const categories = [
   },
   {
     key: 'tools',
-    label: '常用工具',
+    label: '操作系统',
     content: (
-      <ul>
-        <li><a href="https://gitee.com/cunkai/HomebrewCN" target="_blank" rel="noopener">Homebrew 国内一键安装脚本</a></li>
-        <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode 下载</a></li>
-        <li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git 官网</a></li>
-        <li><a href="https://www.python.org/downloads/" target="_blank" rel="noopener">Python 官网</a></li>
-      </ul>
+      <div>
+        <div className="alert alert--info" style={{marginBottom: 24}}>
+          <strong>提示：</strong> 本区收录主流操作系统的官方下载与第三方下载资源，涵盖 Windows、macOS、Linux 等，方便用户快速获取各系统镜像。部分老旧系统仅提供第三方下载，建议优先选择官方渠道或权威资源。
+        </div>
+        <div style={{marginBottom: 32}}>
+          <h3>Windows</h3>
+          <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+            <thead>
+              <tr>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>版本</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>官方下载</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>第三方下载(原版)</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>维护状态</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最后更新时间</th>
+              </tr>
+            </thead>
+            <tbody>
+              {windowsList.map(item => (
+                <tr key={item.version}>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.version}</td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
+                    {item.officialDown ? (
+                      <a href={item.official} target="_blank" rel="noopener">官方下载</a>
+                    ) : (
+                      <span style={{color:'#aaa'}}>已下架</span>
+                    )}
+                  </td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
+                    <a href={item.third} target="_blank" rel="noopener">点击使用迅雷下载</a>
+                  </td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.status}</td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.lastUpdate}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div
+            style={{
+              fontSize: 13,
+              color: (typeof window !== 'undefined' && document.documentElement.classList.contains('theme-dark')) ? 'black' : 'white',
+              marginBottom: 16,
+              lineHeight: 1.7
+            }}
+          >
+            “最后更新时间”字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
+            “第三方”资源指 <b>MSDN</b> 收录的原版非激活系统镜像，并非人为修改或激活后的系统。
+          </div>
+        </div>
+        <div style={{marginBottom: 32}}>
+          <h3>macOS</h3>
+          <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+            <thead>
+              <tr>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>名称</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>发布时间</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最新版本</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>系统下载</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>芯片要求</th>
+                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              {macosList.map(item => (
+                <tr key={item.name}>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.name}</td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.releaseDate}</td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.latestVersion}</td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}><a href={item.download} target="_blank" rel="noopener">下载</a></td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.chip}</td>
+                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.remark}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div
+            style={{
+              fontSize: 13,
+              color: (typeof window !== 'undefined' && document.documentElement.classList.contains('theme-dark')) ? 'black' : 'white',
+              marginBottom: 16,
+              lineHeight: 1.7
+            }}
+          >
+            系统镜像下载来源：sysin.org
+          </div>
+        </div>
+        <div style={{marginBottom: 32}}>
+          <h3>Linux</h3>
+          <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+            <tbody>
+              {Array.from({length: Math.ceil(linuxList.length / 5)}).map((_, rowIdx) => (
+                <tr key={rowIdx}>
+                  {linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).map(item => (
+                    <td key={item.url} style={{padding: '12px 8px', textAlign: 'center', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}>
+                      <a href={item.url} target="_blank" rel="noopener">{item.name}</a>
+                    </td>
+                  ))}
+                  {/* 补齐空单元格 */}
+                  {Array.from({length: 5 - linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).length}).map((_, i) => (
+                    <td key={"empty-"+i} style={{padding: '12px 8px', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}></td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div
+            style={{
+              fontSize: 13,
+              color: (typeof window !== 'undefined' && document.documentElement.classList.contains('theme-dark')) ? 'black' : 'white',
+              marginBottom: 16,
+              lineHeight: 1.7
+            }}
+          >
+            由于 Linux 发行版本众多，这里只展示一些。
+          </div>
+        </div>
+      </div>
     ),
   },
   {
