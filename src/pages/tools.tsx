@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import { useColorMode } from '@docusaurus/theme-common';
 
@@ -177,6 +177,25 @@ const linuxList = [
   { name: 'EndeavourOS 官网', url: 'https://endeavouros.com/' },
   { name: 'Parrot OS 官网', url: 'https://www.parrotsec.org/' },
   { name: 'Tails 官网', url: 'https://tails.net/' },
+];
+
+// JetBrains 全家桶数据
+const jetbrainsList = [
+  { name: 'IntelliJ IDEA', url: 'https://www.jetbrains.com/idea/' },
+  { name: 'PyCharm', url: 'https://www.jetbrains.com/pycharm/' },
+  { name: 'WebStorm', url: 'https://www.jetbrains.com/webstorm/' },
+  { name: 'PhpStorm', url: 'https://www.jetbrains.com/phpstorm/' },
+  { name: 'CLion', url: 'https://www.jetbrains.com/clion/' },
+  { name: 'GoLand', url: 'https://www.jetbrains.com/go/' },
+  { name: 'DataGrip', url: 'https://www.jetbrains.com/datagrip/' },
+  { name: 'Rider', url: 'https://www.jetbrains.com/rider/' },
+  { name: 'RubyMine', url: 'https://www.jetbrains.com/ruby/' },
+  { name: 'AppCode', url: 'https://www.jetbrains.com/objc/' },
+  { name: 'ReSharper', url: 'https://www.jetbrains.com/resharper/' },
+  { name: 'TeamCity', url: 'https://www.jetbrains.com/teamcity/' },
+  { name: 'YouTrack', url: 'https://www.jetbrains.com/youtrack/' },
+  { name: 'Space', url: 'https://www.jetbrains.com/space/' },
+  { name: 'Datalore', url: 'https://www.jetbrains.com/datalore/' },
 ];
 
 const categories = [
@@ -368,17 +387,67 @@ const categories = [
     key: 'others',
     label: '其他资源',
     content: (
-      <ul>
-        <li><a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">PyCharm</a></li>
-        <li><a href="https://jupyter.org/" target="_blank" rel="noopener">Jupyter 官网</a></li>
-      </ul>
+      <div>
+        <div className="alert alert--info" style={{marginBottom: 24}}>
+          <strong>提示：</strong> 这里收录杂七杂八的实用工具，包括开发辅助、数据分析、团队协作等资源。
+        </div>
+        <div style={{marginBottom: 32}}>
+          <h3>JetBrains 全家桶</h3>
+          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
+            <table style={{minWidth: 400, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+              <tbody>
+                {Array.from({length: Math.ceil(jetbrainsList.length / 5)}).map((_, rowIdx) => (
+                  <tr key={rowIdx}>
+                    {jetbrainsList.slice(rowIdx * 5, rowIdx * 5 + 5).map(item => (
+                      <td key={item.url} style={{padding: '12px 8px', textAlign: 'center', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}>
+                        <a href={item.url} target="_blank" rel="noopener">{item.name}</a>
+                      </td>
+                    ))}
+                    {/* 补齐空单元格 */}
+                    {Array.from({length: 5 - jetbrainsList.slice(rowIdx * 5, rowIdx * 5 + 5).length}).map((_, i) => (
+                      <td key={"empty-"+i} style={{padding: '12px 8px', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}></td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <ul>
+          <li><a href="https://jupyter.org/" target="_blank" rel="noopener">Jupyter 官网</a></li>
+        </ul>
+      </div>
     ),
   },
 ];
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)');
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    setIsMobile(mq.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+  return isMobile;
+}
+
 function ToolsContent({ selected, setSelected }: { selected: string; setSelected: (key: string) => void }) {
   const { colorMode } = useColorMode();
+  const [showSidebar, setShowSidebar] = useState(false);
+  const isMobile = typeof window !== 'undefined' ? useIsMobile() : false;
   const current = categories.find(c => c.key === selected);
+
+  // 切换tab时自动关闭侧边栏
+  useEffect(() => {
+    if (showSidebar) setShowSidebar(false);
+    // eslint-disable-next-line
+  }, [selected]);
+
+  // Docusaurus navbar高度，默认60px
+  const navbarHeight = 60;
+
   return (
     <div
       style={{
@@ -387,50 +456,130 @@ function ToolsContent({ selected, setSelected }: { selected: string; setSelected
         margin: 0,
         background: colorMode === 'dark' ? '#23272f' : '#fff',
         borderRadius: 0,
-        boxShadow: 'none'
+        boxShadow: 'none',
+        position: 'relative',
       }}
     >
-      <nav style={{
-        width: 180,
-        borderRight: '1px solid #eee',
-        padding: '2rem 0',
-        background: colorMode === 'dark' ? '#181a20' : '#fafbfc',
-        borderRadius: '12px 0 0 12px'
-      }}>
-        <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-          {categories.map(cat => (
-            <li key={cat.key}>
-              <button
-                onClick={() => setSelected(cat.key)}
-                style={{
-                  display: 'block',
-                  width: '100%',
-                  padding: '12px 24px',
-                  background: selected === cat.key ? '#e3e8f0' : 'none',
-                  border: 'none',
-                  borderLeft: selected === cat.key ? '4px solid #3578e5' : '4px solid transparent',
-                  color: selected === cat.key
-                    ? '#3578e5'
-                    : (colorMode === 'dark' ? '#fff' : '#222'),
-                  fontWeight: selected === cat.key ? 600 : 400,
-                  fontSize: 16,
-                  textAlign: 'left',
-                  cursor: 'pointer',
-                  outline: 'none',
-                  borderRadius: 0,
-                  transition: 'background .2s, color .2s',
-                }}
-              >
-                {cat.label}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      {/* 移动端菜单按钮 */}
+      {isMobile && (
+        <button
+          onClick={() => setShowSidebar(true)}
+          style={{
+            position: 'fixed',
+            top: navbarHeight + 16,
+            left: -20, // 只露半个圆
+            zIndex: 1051,
+            background: '#3578e5',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '50%',
+            width: 40,
+            height: 40,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: 22,
+            boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+            cursor: 'pointer',
+            borderLeft: '2px solid #fff', // 增强半圆视觉
+            transition: 'left .2s',
+          }}
+          aria-label="打开菜单"
+        >
+          <span style={{display: 'block', lineHeight: 1}}>&#9776;</span>
+        </button>
+      )}
+      {/* 侧边栏：桌面端始终显示，移动端抽屉显示 */}
+      {(!isMobile || showSidebar) && (
+        <nav
+          style={{
+            width: 180,
+            borderRight: '1px solid #eee',
+            padding: '2rem 0',
+            background: colorMode === 'dark' ? '#181a20' : '#fafbfc',
+            borderRadius: '12px 0 0 12px',
+            position: isMobile ? 'fixed' : 'static',
+            top: isMobile ? navbarHeight : 0,
+            left: 0,
+            height: isMobile ? `calc(100vh - ${navbarHeight}px)` : '100vh',
+            zIndex: 1050,
+            boxShadow: isMobile ? '2px 0 16px rgba(0,0,0,0.15)' : 'none',
+            transition: 'transform .3s',
+            transform: isMobile && !showSidebar ? 'translateX(-100%)' : 'none',
+          }}
+        >
+          {/* 移动端关闭按钮 */}
+          {isMobile && (
+            <button
+              onClick={() => setShowSidebar(false)}
+              style={{
+                position: 'absolute',
+                top: 12,
+                right: 12,
+                background: 'none',
+                border: 'none',
+                fontSize: 22,
+                color: '#888',
+                cursor: 'pointer',
+              }}
+              aria-label="关闭菜单"
+            >
+              ×
+            </button>
+          )}
+          <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
+            {categories.map(cat => (
+              <li key={cat.key}>
+                <button
+                  onClick={() => {
+                    setSelected(cat.key);
+                    if (isMobile) setShowSidebar(false);
+                  }}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    padding: '12px 24px',
+                    background: selected === cat.key ? '#e3e8f0' : 'none',
+                    border: 'none',
+                    borderLeft: selected === cat.key ? '4px solid #3578e5' : '4px solid transparent',
+                    color: selected === cat.key
+                      ? '#3578e5'
+                      : (colorMode === 'dark' ? '#fff' : '#222'),
+                    fontWeight: selected === cat.key ? 600 : 400,
+                    fontSize: 16,
+                    textAlign: 'left',
+                    cursor: 'pointer',
+                    outline: 'none',
+                    borderRadius: 0,
+                    transition: 'background .2s, color .2s',
+                  }}
+                >
+                  {cat.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
       <main style={{flex: 1, padding: '2rem', width: '100%'}}>
         <h2 style={{marginTop: 0}}>{current?.label}</h2>
         {current?.content}
       </main>
+      {/* 遮罩层 */}
+      {isMobile && showSidebar && (
+        <div
+          onClick={() => setShowSidebar(false)}
+          style={{
+            position: 'fixed',
+            top: navbarHeight,
+            left: 0,
+            width: '100vw',
+            height: `calc(100vh - ${navbarHeight}px)` ,
+            background: 'rgba(0,0,0,0.25)',
+            zIndex: 1049,
+          }}
+        />
+      )}
     </div>
   );
 }
