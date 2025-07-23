@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'My Modern Blog',
-  tagline: 'Dinosaurs are cool',
+  tagline: '在代码与诗意的光影中，探寻知识的边界',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
