@@ -234,36 +234,38 @@ const categories = [
         </div>
         <div style={{marginBottom: 32}}>
           <h3>Windows</h3>
-          <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-            <thead>
-              <tr>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>版本</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>官方下载</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>第三方下载(原版)</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>维护状态</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最后更新时间</th>
-              </tr>
-            </thead>
-            <tbody>
-              {windowsList.map(item => (
-                <tr key={item.version}>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.version}</td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
-                    {item.officialDown ? (
-                      <a href={item.official} target="_blank" rel="noopener">官方下载</a>
-                    ) : (
-                      <span style={{color:'#aaa'}}>已下架</span>
-                    )}
-                  </td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
-                    <a href={item.third} target="_blank" rel="noopener">点击使用迅雷下载</a>
-                  </td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.status}</td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.lastUpdate}</td>
+          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
+            <table style={{minWidth: 600, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+              <thead>
+                <tr>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>版本</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>官方下载</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>第三方下载(原版)</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>维护状态</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最后更新时间</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {windowsList.map(item => (
+                  <tr key={item.version}>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.version}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
+                      {item.officialDown ? (
+                        <a href={item.official} target="_blank" rel="noopener">官方下载</a>
+                      ) : (
+                        <span style={{color:'#aaa'}}>已下架</span>
+                      )}
+                    </td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
+                      <a href={item.third} target="_blank" rel="noopener">点击使用迅雷下载</a>
+                    </td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.status}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.lastUpdate}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <div
             style={{
               fontSize: 13,
@@ -278,30 +280,32 @@ const categories = [
         </div>
         <div style={{marginBottom: 32}}>
           <h3>macOS</h3>
-          <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-            <thead>
-              <tr>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>名称</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>发布时间</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最新版本</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>系统下载</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>芯片要求</th>
-                <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>备注</th>
-              </tr>
-            </thead>
-            <tbody>
-              {macosList.map(item => (
-                <tr key={item.name}>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.name}</td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.releaseDate}</td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.latestVersion}</td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}><a href={item.download} target="_blank" rel="noopener">下载</a></td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.chip}</td>
-                  <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.remark}</td>
+          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
+            <table style={{minWidth: 700, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+              <thead>
+                <tr>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>名称</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>发布时间</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最新版本</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>系统下载</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>芯片要求</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>备注</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {macosList.map(item => (
+                  <tr key={item.name}>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.name}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.releaseDate}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.latestVersion}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}><a href={item.download} target="_blank" rel="noopener">下载</a></td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.chip}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.remark}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <div
             style={{
               fontSize: 13,
@@ -315,23 +319,25 @@ const categories = [
         </div>
         <div style={{marginBottom: 32}}>
           <h3>Linux</h3>
-          <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-            <tbody>
-              {Array.from({length: Math.ceil(linuxList.length / 5)}).map((_, rowIdx) => (
-                <tr key={rowIdx}>
-                  {linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).map(item => (
-                    <td key={item.url} style={{padding: '12px 8px', textAlign: 'center', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}>
-                      <a href={item.url} target="_blank" rel="noopener">{item.name}</a>
-                    </td>
-                  ))}
-                  {/* 补齐空单元格 */}
-                  {Array.from({length: 5 - linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).length}).map((_, i) => (
-                    <td key={"empty-"+i} style={{padding: '12px 8px', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}></td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
+            <table style={{minWidth: 400, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+              <tbody>
+                {Array.from({length: Math.ceil(linuxList.length / 5)}).map((_, rowIdx) => (
+                  <tr key={rowIdx}>
+                    {linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).map(item => (
+                      <td key={item.url} style={{padding: '12px 8px', textAlign: 'center', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}>
+                        <a href={item.url} target="_blank" rel="noopener">{item.name}</a>
+                      </td>
+                    ))}
+                    {/* 补齐空单元格 */}
+                    {Array.from({length: 5 - linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).length}).map((_, i) => (
+                      <td key={"empty-"+i} style={{padding: '12px 8px', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}></td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <div
             style={{
               fontSize: 13,
