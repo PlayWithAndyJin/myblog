@@ -180,6 +180,31 @@ const linuxList = [
   { name: 'Tails 官网', url: 'https://tails.net/' },
 ];
 
+// Windows Server 数据
+const windowsServerList = [
+  { name: 'Windows Server 2025', version: '标准版', arch: '64位', releaseDate: '2024', download: 'magnet:?xt=urn:btih:69f35c09f7c5fb778a528d445840aae1b4bb7f03&dn=zh-cn_windows_server_2025_updated_july_2025_x64_dvd_a1f0681d.iso&xl=7510183936', status: '维护中' },
+  { name: 'Windows Server 2022', version: '标准版', arch: '64位', releaseDate: '2021', download: 'magnet:?xt=urn:btih:40810feeda21cb5fbcfa2f4eebf2fd9356378412&dn=zh-cn_windows_server_2022_updated_sep_2024_x64_dvd_cab4e960.iso&xl=6155229184', status: '维护中' },
+  { name: 'Windows Server 2019', version: '精华版', arch: '64位', releaseDate: '2018', download: 'ed2k://|file|cn_windows_server_2019_essentials_x64_dvd_5b386b0b.iso|4836911104|CBA4E3F0C66107AD6B64E4DA077D004F|/', status: '维护中' },
+  { name: 'Windows Server 2019', version: '标准版', arch: '64位', releaseDate: '2018', download: 'magnet:?xt=urn:btih:22A410DEA1B0886354A34D19E995BECBB7EBA15E&dn=cn_windows_server_2019_updated_july_2020_x64_dvd_2c9b67da.iso&xl=5675251712', status: '维护中' },
+  { name: 'Windows Server 2016', version: '精华版', arch: '64位', releaseDate: '2016', download: 'ed2k://|file|cn_windows_server_2016_essentials_x64_dvd_9327779.iso|4902592512|4693ECE5FEEDE3FE349FC9E7AB467CE4|/', status: '停止维护' },
+  { name: 'Windows Server 2016', version: '标准版', arch: '64位', releaseDate: '2016', download: 'ed2k://|file|cn_windows_server_2016_updated_feb_2018_x64_dvd_11636703.iso|6294265856|4077CEBEBB40AFA5A66017D2EC7A9CD5|/', status: '停止维护' },
+  { name: 'Windows Server 2012 R2', version: '数据中心版', arch: '64位', releaseDate: '2013', download: 'ed2k://|file|cn_windows_server_2012_r2_datacenter_preview_x64_dvd_2358525.iso|4239566848|F2E4A8A6DDC8F225F04333F7E0F6110D|/', status: '停止维护' },
+  { name: 'Windows Server 2012 R2', version: '精华版', arch: '64位', releaseDate: '2013', download: 'ed2k://|file|cn_windows_server_2012_r2_essentials_with_update_x64_dvd_6052796.iso|5201313792|C6E9486A9364E9A918830940EF5A1946|/', status: '停止维护' },
+  { name: 'Windows Server 2012 R2', version: '标准版', arch: '64位', releaseDate: '2013', download: 'ed2k://|file|cn_windows_server_2012_r2_with_update_x64_dvd_6052725.iso|5545705472|121EC13B53882E501C1438237E70810D|/', status: '停止维护' },
+  { name: 'Windows Server 2012', version: '基础版', arch: '64位', releaseDate: '2012', download: 'ed2k://|file|cn_windows_server_2012_storage_server_and_foundation_x64_dvd_916117.iso|3694643200|2F727F6199870ED1A3865EF864FBF0C8|/', status: '停止维护' },
+  { name: 'Windows Server 2012', version: '标准版', arch: '64位', releaseDate: '2012', download: 'ed2k://|file|cn_windows_server_2012_x64_dvd_915588.iso|3826081792|6A56281311F9FE6973F66CF36E2F50BE|/', status: '停止维护' },
+  { name: 'Windows Server 2008 R2', version: ' 标准/企业/数据中心/Web集合版', arch: '64位', releaseDate: '2011', download: 'ed2k://|file|cn_windows_server_2008_r2_standard_enterprise_datacenter_and_web_with_sp1_x64_dvd_617598.iso|3368839168|D282F613A80C2F45FF23B79212A3CF67|/', status: '停止维护' },
+  { name: 'Windows Web Server 2008', version: '标准版', arch: '64位', releaseDate: '2009', download: 'ed2k://|file|cn_windows_web_server_2008_with_sp2_x64_dvd_x15-51046.iso|2495262720|BC46231E88E87ED9D7A307C7BEB94D89|/', status: '停止维护' },
+  { name: 'Windows Web Server 2008', version: '标准版', arch: '32位', releaseDate: '2009', download: 'ed2k://|file|cn_windows_web_server_2008_with_sp2_x86_dvd_x15-51050.iso|1860190208|EBEA302ED2A76C4B435697F321E65804|/', status: '停止维护' },
+  { name: 'Windows Server 2008', version: '数据中心/企业/标准集合版', arch: '64位', releaseDate: '2008', download: 'ed2k://|file|cn_windows_server_2008_standard_enterprise_and_datacenter_with_sp2_x64_dvd_x15-41319.iso|2952992768|5F2CA73C9DA296CB05E7C0319F7D0E62|/', status: '停止维护' },
+  { name: 'Windows Server 2008', version: '数据中心/企业/标准集合版', arch: '32位', releaseDate: '2008', download: 'ed2k://|file|cn_windows_server_standard_enterprise_and_datacenter_with_sp2_x86_dvd_x15-41045.iso|2190057472|E93B029C442F19024AA9EF8FB02AC90B|/', status: '停止维护' },
+  { name: 'Windows Server 2003 R2', version: '企业版', arch: '64位', releaseDate: '2005', download: 'ed2k://|file|cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso|647686144|107F10D2A7FF12FFF0602FF60602BB37|/', status: '停止维护' },
+  { name: 'Windows Server 2003 R2', version: '标准版', arch: '64位', releaseDate: '2005', download: 'ed2k://|file|cn_win_srv_2003_r2_standard_x64_with_sp2_cd1_X13-28810.iso|646285312|E72B80540955703098E6AEF1DE434BAF|/', status: '停止维护' },
+  { name: 'Windows Server 2003 R2', version: '企业版', arch: '32位', releaseDate: '2005', download: 'ed2k://|file|cn_win_srv_2003_r2_enterprise_with_sp2_vl_cd1_X13-46432.iso|637917184|284DC0E76945125035B9208B9199E465|/', status: '停止维护' },
+  { name: 'Windows Server 2003 R2', version: '标准版', arch: '32位', releaseDate: '2005', download: 'ed2k://|file|cn_win_srv_2003_r2_standard_with_sp2_cd1_X13-13927.iso|636440576|E4657FA463E5BAF6367AC9B888731E95|/', status: '停止维护' },
+  { name: 'Windows Server 2003', version: '标准版', arch: '32位', releaseDate: '2003', download: 'ed2k://|file|cn_windows_server_2003_sp2_x86_cd.iso|390135808|4C38E53EF100F80683810CAC1044CA70|/', status: '停止维护' },
+];
+
 // JetBrains 全家桶数据
 const jetbrainsList = [
   { name: 'IntelliJ IDEA', url: 'https://www.jetbrains.com/idea/' },
@@ -203,6 +228,22 @@ const jetbrainsList = [
 const dockerMirrorList = [
   { vendor: '一米云', url: 'https://docker.1ms.run' },
   { vendor: '轩辕云', url: 'https://docker.xuanyuan.me' },
+];
+
+// Office办公套件数据
+const officeList = [
+  { gen: 'Office 365', version: '专业增强版', arch: '64位', download: '', status: '长期维护', os: 'Windows' },
+  { gen: 'Office 365', version: '专业增强版', arch: '', download: '', status: '长期维护', os: 'macOS' },
+  { gen: 'Office 2024', version: '专业增强版', arch: '64位', download: '', status: '维护中', os: 'Windows' },
+  { gen: 'Office 2021', version: '专业增强版', arch: '32/64位', download: '', status: '维护中', os: 'Windows' },
+  { gen: 'Office 2019', version: '专业增强版', arch: '32/64位', download: 'ed2k://|file|cn_office_professional_plus_2019_x86_x64_dvd_5e5be643.iso|3775004672|1E4FFA5240F21F60DC027F73F1C62FF4|/', status: '维护中', os: 'Windows' },
+  { gen: 'Office 2016', version: '专业增强版', arch: '32/64位', download: 'ed2k://|file|cn_office_professional_plus_2016_x86_x64_dvd_6969182.iso|2588266496|27EEA4FE4BB13CD0ECCDFC24167F9E01|/', status: '停止维护', os: 'Windows' },
+  { gen: 'Office 2016', version: '家庭和商业多集合版', arch: '', download: 'ed2k://|file|mu_office_home_and_business_2016_for_mac_mac_dvd_7027756.iso|1214924800|D6FA02597D30709949C4FEA6AA0F9D6B|/', status: '停止维护', os: 'macOS' },
+  { gen: 'Office 2013', version: '专业增强 SP1 补丁版', arch: '32/64位', download: 'ed2k://|file|cn_office_professional_plus_2013_with_sp1_x86_and_x64_dvd_3921921.iso|1838749696|C2C7DCB43293252480A32F91F21DE3B3|/', status: '停止维护', os: 'Windows' },
+  { gen: 'Office 2011', version: 'SP1 补丁版', arch: '', download: 'ed2k://|file|cn_office_for_mac_2011_with_sp1_mac_dvd_671939.iso|1229187072|4F13E440C6243FB9C1877222B1C38745|/', status: '停止维护', os: 'macOS' },
+  { gen: 'Office 2010', version: '专业增强 SP1 补丁版', arch: '32/64位', download: 'ed2k://|file|cn_office_professional_plus_2010_with_sp1_x86_x64_732114.iso|2939512832|7A118C7E70D022C54D27E6C3B9C72C36|/', status: '停止维护', os: 'Windows' },
+  { gen: 'Office 2007', version: '专业增强版', arch: '32位', download: 'ed2k://|file|cn_office_professional_plus_2007_dvd_X12-38713.iso|694059008|CFAE350F8A9028110D12D61D9AEC1315|/', status: '停止维护', os: 'Windows' },
+  { gen: 'Office 2003', version: 'SP3 补丁版', arch: '32位', download: 'ed2k://|file|zh-Hans_office_2003_service_pack_3_x86.exe|142028200|93157828F4CDA043AD266EC492599111|/', status: '停止维护', os: 'Windows' },
 ];
 
 const categories = [
@@ -255,8 +296,11 @@ const categories = [
     label: '操作系统',
     content: (
       <div>
-        <div className="alert alert--info" style={{marginBottom: 24}}>
-          <strong>提示：</strong> 本区收录主流操作系统的官方下载与第三方下载资源，涵盖 Windows、macOS、Linux 等，方便用户快速获取各系统镜像。部分老旧系统仅提供第三方下载，建议优先选择官方渠道或权威资源。
+        <div className="alert alert--info" style={{marginBottom: 1}}>
+          <strong>提示：</strong> 本区收录主流操作系统的官方下载与第三方下载资源，涵盖<strong> Windows、Windows Server、macOS、Linux </strong>等，方便用户快速获取各系统镜像。部分老旧系统仅提供第三方下载，建议优先选择官方渠道或权威资源。下载Windows Server的用户请提前安装迅雷，下载链接将使用迅雷进行下载。
+        </div>
+        <div className="alert alert--warning" style={{marginTop: 1, marginBottom: 24}}>
+        <strong>提示：</strong> 本站提供的系统镜像均为原版非激活系统镜像，且未经人为修改，请勿用于非法用途。
         </div>
         <div style={{marginBottom: 32}}>
           <h3>Windows</h3>
@@ -300,7 +344,46 @@ const categories = [
             }}
           >
             "最后更新时间"字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
-            "第三方"资源指 <b>MSDN</b> 收录的原版非激活系统镜像，并非人为修改或激活后的系统。
+          </div>
+        </div>
+        {/* Windows Server表格，紧跟在Windows表格后 */}
+        <div style={{marginBottom: 32}}>
+          <h3>Windows Server</h3>
+          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
+            <table style={{minWidth: 700, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+              <thead>
+                <tr>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>名称</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>发布时间</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>版本</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>位数</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>系统下载</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>维护状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                {windowsServerList.map(item => (
+                  <tr key={item.name + item.version + item.arch}>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.name}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.releaseDate}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.version}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.arch}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
+                      {item.download
+                        ? <a href={item.download} target="_blank" rel="noopener">下载</a>
+                        : <span style={{color:'#aaa'}}>本站暂未收录</span>
+                      }
+                    </td>
+                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.status}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div style={{ fontSize: 13, lineHeight: 1.7, marginTop: 8 }}>
+            为了提高维护的效率，本站不提供Windows Server的官方下载直链，仅提供第三方资源。<br/>
+            "维护状态"代表微软官方的支持状态，该状态本站可能更新不及时，仅供参考。<br/>
+            系统镜像来源于MSDN，下载链接直链到MSDN相应的链接。若遇到下载失败，可能是删除了该资源。
           </div>
         </div>
         <div style={{marginBottom: 32}}>
@@ -376,24 +459,12 @@ const categories = [
     ),
   },
   {
-    key: 'tutorials',
-    label: '教程网站',
-    content: (
-      <ul>
-        <li><a href="https://docs.python.org/zh-cn/3/" target="_blank" rel="noopener">Python 官方文档</a></li>
-        <li><a href="https://pytorch.apachecn.org/" target="_blank" rel="noopener">PyTorch 中文文档</a></li>
-        <li><a href="https://tensorflow.google.cn/" target="_blank" rel="noopener">TensorFlow 中文文档</a></li>
-        <li><a href="https://www.runoob.com/" target="_blank" rel="noopener">菜鸟教程</a></li>
-      </ul>
-    ),
-  },
-  {
-    key: 'others',
-    label: '其他资源',
+    key: 'software',
+    label: '软件资源',
     content: (
       <div>
         <div className="alert alert--info" style={{marginBottom: 24}}>
-          <strong>提示：</strong> 这里收录杂七杂八的实用工具，包括开发辅助、数据分析、团队协作等资源。
+          <strong>提示：</strong> 这里收录主流开发工具及其官方下载地址，后续会不断补充更多软件资源。
         </div>
         <div style={{marginBottom: 32}}>
           <h3>JetBrains 全家桶</h3>
@@ -416,6 +487,64 @@ const categories = [
               </tbody>
             </table>
           </div>
+        </div>
+        {/* Office办公套件表格 */}
+        <div style={{marginBottom: 32}}>
+          <h3>Office 办公套件</h3>
+          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
+            <table style={{minWidth: 700, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+              <thead>
+                <tr>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>世代</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>版本</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>位数</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>下载</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>维护状态</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>适配系统</th>
+                </tr>
+              </thead>
+              <tbody>
+                {officeList.map(item => (
+                  <tr key={item.gen + item.version + item.os}>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.gen}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.version}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.arch}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}>
+                      {item.download
+                        ? <a href={item.download} target="_blank" rel="noopener">下载</a>
+                        : <span style={{color:'#aaa'}}>本站暂未收录，请前往官网购买/下载</span>
+                      }
+                    </td>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.status}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.os}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: 'tutorials',
+    label: '教程网站',
+    content: (
+      <ul>
+        <li><a href="https://docs.python.org/zh-cn/3/" target="_blank" rel="noopener">Python 官方文档</a></li>
+        <li><a href="https://pytorch.apachecn.org/" target="_blank" rel="noopener">PyTorch 中文文档</a></li>
+        <li><a href="https://tensorflow.google.cn/" target="_blank" rel="noopener">TensorFlow 中文文档</a></li>
+        <li><a href="https://www.runoob.com/" target="_blank" rel="noopener">菜鸟教程</a></li>
+      </ul>
+    ),
+  },
+  {
+    key: 'others',
+    label: '其他资源',
+    content: (
+      <div>
+        <div className="alert alert--info" style={{marginBottom: 24}}>
+          <strong>提示：</strong> 这里收录杂七杂八的实用工具，包括开发辅助、数据分析、团队协作等资源。
         </div>
         {/* Docker 国内实时有效源表格 */}
         <div style={{marginBottom: 32}}>
