@@ -198,6 +198,12 @@ const jetbrainsList = [
   { name: 'Datalore', url: 'https://www.jetbrains.com/datalore/' },
 ];
 
+// Docker 国内实时有效源
+const dockerMirrorList = [
+  { vendor: '一米云', url: 'https://docker.1ms.run' },
+  { vendor: '轩辕云', url: 'https://docker.xuanyuan.me' },
+];
+
 const categories = [
   {
     key: 'mirrors',
@@ -286,15 +292,14 @@ const categories = [
             </table>
           </div>
           <div
+            className="os-table-note"
             style={{
               fontSize: 13,
-              color: (typeof window !== 'undefined' && document.documentElement.classList.contains('theme-dark')) ? 'black' : 'white',
-              marginBottom: 16,
               lineHeight: 1.7
             }}
           >
-            “最后更新时间”字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
-            “第三方”资源指 <b>MSDN</b> 收录的原版非激活系统镜像，并非人为修改或激活后的系统。
+            "最后更新时间"字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
+            "第三方"资源指 <b>MSDN</b> 收录的原版非激活系统镜像，并非人为修改或激活后的系统。
           </div>
         </div>
         <div style={{marginBottom: 32}}>
@@ -326,10 +331,9 @@ const categories = [
             </table>
           </div>
           <div
+            className="os-table-note"
             style={{
               fontSize: 13,
-              color: (typeof window !== 'undefined' && document.documentElement.classList.contains('theme-dark')) ? 'black' : 'white',
-              marginBottom: 16,
               lineHeight: 1.7
             }}
           >
@@ -358,10 +362,9 @@ const categories = [
             </table>
           </div>
           <div
+            className="os-table-note"
             style={{
               fontSize: 13,
-              color: (typeof window !== 'undefined' && document.documentElement.classList.contains('theme-dark')) ? 'black' : 'white',
-              marginBottom: 16,
               lineHeight: 1.7
             }}
           >
@@ -413,9 +416,34 @@ const categories = [
             </table>
           </div>
         </div>
-        <ul>
-          <li><a href="https://jupyter.org/" target="_blank" rel="noopener">Jupyter 官网</a></li>
-        </ul>
+        {/* Docker 国内实时有效源表格 */}
+        <div style={{marginBottom: 32}}>
+          <h3>Docker 国内实时有效源</h3>
+          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
+            <table className="docker-mirror-table" style={{minWidth: 400, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
+              <thead>
+                <tr>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>供应商</th>
+                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>镜像地址</th>
+                </tr>
+              </thead>
+              <tbody>
+                {dockerMirrorList.map(item => (
+                  <tr key={item.vendor}>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.vendor}</td>
+                    <td style={{padding: '6px 12px', textAlign: 'center'}}><a href={item.url} target="_blank" rel="noopener">{item.url}</a></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          className="os-table-note"
+          style={{ fontSize: 13, lineHeight: 1.7 }}
+        >
+          会根据实测不定时每日更新
+        </div>
       </div>
     ),
   },
@@ -502,7 +530,7 @@ function ToolsContent({ selected, setSelected }: { selected: string; setSelected
             top: isMobile ? navbarHeight : 0,
             left: 0,
             height: isMobile ? `calc(100vh - ${navbarHeight}px)` : '100vh',
-            zIndex: 1050,
+            zIndex: 90,
             boxShadow: isMobile ? '2px 0 16px rgba(0,0,0,0.15)' : 'none',
             transition: 'transform .3s',
             transform: isMobile && !showSidebar ? 'translateX(-100%)' : 'none',
@@ -565,21 +593,6 @@ function ToolsContent({ selected, setSelected }: { selected: string; setSelected
         <h2 style={{marginTop: 0}}>{current?.label}</h2>
         {current?.content}
       </main>
-      {/* 遮罩层 */}
-      {isMobile && showSidebar && (
-        <div
-          onClick={() => setShowSidebar(false)}
-          style={{
-            position: 'fixed',
-            top: navbarHeight,
-            left: 0,
-            width: '100vw',
-            height: `calc(100vh - ${navbarHeight}px)` ,
-            background: 'rgba(0,0,0,0.25)',
-            zIndex: 1049,
-          }}
-        />
-      )}
     </div>
   );
 }
@@ -591,4 +604,4 @@ export default function Tools() {
       <ToolsContent selected={selected} setSelected={setSelected} />
     </Layout>
   );
-} 
+}
