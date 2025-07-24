@@ -25,6 +25,25 @@ function HomepageHeader() {
   );
 }
 
+function AnnouncementBar() {
+  return (
+    <div style={{
+      background: '#fffbe6',
+      color: '#ad6800',
+      textAlign: 'center',
+      padding: '12px 0',
+      borderRadius: 10,
+      margin: '24px auto 0',
+      maxWidth: 900,
+      fontWeight: 600,
+      fontSize: 16,
+      boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
+    }}>
+      🎉 本站已上线，欢迎访问与交流！
+    </div>
+  );
+}
+
 function LatestProjects() {
   const latest = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
   return (
@@ -72,8 +91,8 @@ function LatestTutorialAndBlog() {
         {/* 最新教程（手动维护） */}
         <div style={{flex: 1, minWidth: 260, background: '#f8f9fa', borderRadius: 12, padding: 20}}>
           <h3>最新教程</h3>
-          <div style={{fontWeight: 600}}>快速安装部署这个网站</div>
-          <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>详细介绍如何自行通过Node.js以及一些其他的方式快速部署一个同样的网站</div>
+          <div style={{fontWeight: 600}}>macOS 安装 Python</div>
+          <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>详细介绍如何在 macOS 上通过 Homebrew 或官网下载方式安装 Python，并区分 Intel/Apple Silicon 芯片，包含 pip 使用说明。</div>
           <Link to="/docs/install_this_website">查看教程 &rarr;</Link>
         </div>
         {/* 最新博客（手动维护） */}
@@ -97,6 +116,7 @@ export default function Home(): ReactNode {
     >
       <HomepageHeader />
       <main style={{background: '#fff'}}>
+        <AnnouncementBar />
         <LatestProjects />
         <LatestTutorialAndBlog />
       </main>
