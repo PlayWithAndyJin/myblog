@@ -1,0 +1,81 @@
+.projectsContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.projectCard {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(99,102,241,0.12);
+  border: 1.5px solid #e0e7ff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.projectCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(99,102,241,0.18);
+}
+.projectCard h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.projectCard p {
+  color: #6366f1;
+}
+.tags {
+  margin: 1rem 0;
+}
+.tag {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #4338ca;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+.projectCard a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+.yearSection {
+  margin-bottom: 2.5rem;
+}
+.yearHeading {
+  font-size: 2rem;
+  color: #4338ca;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e7ff;
+}
+.projectDate {
+  font-size: 0.9rem;
+  color: #818cf8;
+  margin-bottom: 0.8rem;
+}
+@media (max-width: 600px) {
+  .projectsContainer {
+    padding: 1rem;
+  }
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .projectCard {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .yearHeading {
+    font-size: 1.3rem;
+    padding-bottom: 0.3rem;
+  }
+} 
