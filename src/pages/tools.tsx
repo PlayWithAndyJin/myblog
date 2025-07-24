@@ -246,6 +246,180 @@ const officeList = [
   { gen: 'Office 2003', version: 'SP3 补丁版', arch: '32位', download: 'ed2k://|file|zh-Hans_office_2003_service_pack_3_x86.exe|142028200|93157828F4CDA043AD266EC492599111|/', status: '停止维护', os: 'Windows' },
 ];
 
+// UI资源数据
+const uiResourceList = [
+  { name: 'Iconfont', url: 'https://www.iconfont.cn/', desc: '阿里巴巴矢量图标库' },
+  { name: 'Font Awesome', url: 'https://fontawesome.com/', desc: '全球知名图标库' },
+  { name: 'unDraw', url: 'https://undraw.co/illustrations', desc: '免费可商用插画库' },
+  { name: 'LottieFiles', url: 'https://lottiefiles.com/', desc: '动画素材库' },
+  { name: 'UI8', url: 'https://ui8.net/', desc: '高质量UI设计资源' },
+  { name: 'Figma Community', url: 'https://www.figma.com/community', desc: 'Figma官方社区资源' },
+  { name: 'Dribbble', url: 'https://dribbble.com/', desc: '设计师作品展示平台' },
+  { name: 'Behance', url: 'https://www.behance.net/', desc: 'Adobe旗下设计作品平台' },
+  { name: 'Freepik', url: 'https://www.freepik.com/', desc: '免费矢量、插画、图片资源' },
+  { name: 'Pexels', url: 'https://www.pexels.com/', desc: '免费高清图片/视频素材' },
+  { name: 'Unsplash', url: 'https://unsplash.com/', desc: '高质量免费图片库' },
+  { name: 'Shields.io', url: 'https://shields.io/', desc: '开源项目徽章生成' },
+];
+
+// 字体资源数据
+const fontResourceList = [
+  // OPPO
+  {
+    name: 'OPPO Sans 粗体',
+    file: '/fonts/OPPO/OPPOSans-Bold.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: 'OPPO Sans 中等',
+    file: '/fonts/OPPO/OPPOSans-Medium.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: 'OPPO Sans 常规体',
+    file: '/fonts/OPPO/OPPOSans-Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  // Alibaba
+  {
+    name: '淘宝买菜体 常规体',
+    file: '/fonts/Alibaba/TaoBaoMaiCaiTi-Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: '阿里妈妈方圆体 纤细',
+    file: '/fonts/Alibaba/AlimamaFangYuanTiVF-Thin.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: '阿里妈妈刀隶体',
+    file: '/fonts/Alibaba/AlimamaDaoLiTi.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: '阿里妈妈东方大楷 常规体',
+    file: '/fonts/Alibaba/AlimamaDongFangDaKai-Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: '阿里妈妈数黑体 粗体',
+    file: '/fonts/Alibaba/AlimamaShuHeiTi-Bold.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: '阿里巴巴普惠体 常规体',
+    file: '/fonts/Alibaba/Alibaba-PuHuiTi-Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  // HarmonyOS
+  {
+    name: 'HarmonyOS Sans TC 常规体',
+    file: '/fonts/HarmonyOS/HarmonyOS_SansTC_Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: 'HarmonyOS Sans SC 常规体',
+    file: '/fonts/HarmonyOS/HarmonyOS_SansSC_Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: 'HarmonyOS Sans Condensed 常规体',
+    file: '/fonts/HarmonyOS/HarmonyOS_Sans_Condensed_Regular.ttf',
+    sample: 'The quick brown fox jumps over the lazy dog',
+    lang: 'en',
+  },
+  {
+    name: 'HarmonyOS Sans Italic 斜体',
+    file: '/fonts/HarmonyOS/HarmonyOS_SansItalic_Regular.ttf',
+    sample: 'The quick brown fox jumps over the lazy dog',
+    lang: 'en',
+  },
+  {
+    name: 'HarmonyOS Sans 常规体',
+    file: '/fonts/HarmonyOS/HarmonyOS_Sans_Regular.ttf',
+    sample: 'The quick brown fox jumps over the lazy dog',
+    lang: 'en',
+  },
+  {
+    name: 'HarmonyOS Sans Naskh ArabicUI',
+    file: '/fonts/HarmonyOS/HarmonyOS_Sans_Naskh_ArabicUI_Regular.ttf',
+    sample: 'السلام عليكم',
+    lang: 'ar',
+  },
+  {
+    name: 'HarmonyOS Sans Naskh Arabic',
+    file: '/fonts/HarmonyOS/HarmonyOS_Sans_Naskh_Arabic_Regular.ttf',
+    sample: 'السلام عليكم',
+    lang: 'ar',
+  },
+  {
+    name: '钉钉进步体 常规体',
+    file: '/fonts/Alibaba/DingTalkJinBuTi-Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  // HONOR
+  {
+    name: 'HONOR Sans CN 常规体',
+    file: '/fonts/HONOR/HONORSansCN-Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: 'HONOR Sans TC 常规体',
+    file: '/fonts/HONOR/HONORSansTC-Regular.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: 'HONOR Sans 常规体',
+    file: '/fonts/HONOR/HONORSans-Regular.ttf',
+    sample: 'The quick brown fox jumps over the lazy dog',
+    lang: 'en',
+  },
+  {
+    name: 'HONOR Sans ArabicUI',
+    file: '/fonts/HONOR/HONORSansArabicUI-R.ttf',
+    sample: 'السلام عليكم',
+    lang: 'ar',
+  },
+  {
+    name: 'HarmonyOS Sans SC 细体 (本站使用)',
+    file: '/fonts/HarmonyOS/HarmonyOS_SansSC_Light.ttf',
+    sample: '世界你好 123456 Hello World',
+    lang: 'zh',
+  },
+  {
+    name: 'Alibaba Sans 斜体',
+    file: '/fonts/Alibaba/AlibabaSans-Italic.ttf',
+    sample: 'The quick brown fox jumps over the lazy dog',
+    lang: 'en',
+  },
+  {
+    name: 'Alibaba Sans 常规体',
+    file: '/fonts/Alibaba/AlibabaSans-Regular.ttf',
+    sample: 'The quick brown fox jumps over the lazy dog',
+    lang: 'en',
+  },
+  {
+    name: '阿里妈妈灵动体 纤细',
+    file: '/fonts/Alibaba/AlimamaAgileVF-Thin.ttf',
+    sample: 'The quick brown fox jumps over the lazy dog',
+    lang: 'en',
+  },
+];
+
 const categories = [
   {
     key: 'mirrors',
@@ -257,35 +431,35 @@ const categories = [
           当前已收录 <b>清华大学镜像、阿里云镜像、中科大镜像、华为云镜像</b>，后续会不断补充更多主流镜像源，欢迎持续关注。
         </div>
         {mirrorVendors.map(vendor => (
-          <div key={vendor.name} style={{marginBottom: 32}}>
-            <h3 style={{marginBottom: 8}}>
+          <div key={vendor.name} style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+            <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>
               <a href={vendor.url} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none'}}>{vendor.name}</a>
             </h3>
-            <table style={{width: '100%', borderCollapse: 'collapse', background: 'inherit'}}>
-              <thead>
-                <tr>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>镜像名称</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>说明</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>镜像地址-点击跳转</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>状态</th>
-                </tr>
-              </thead>
-              <tbody>
-                {vendor.mirrors
-                  .slice()
-                  .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
-                  .map(mirror => (
-                    <tr key={mirror.url}>
-                      <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{mirror.name}</td>
-                      <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{mirror.desc}</td>
-                      <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
-                        <a href={mirror.url} target="_blank" rel="noopener">{mirror.url}</a>
-                      </td>
-                      <td style={{padding: '6px 12px', textAlign: 'center', color: mirror.status === '离线' ? 'red' : undefined, borderLeft: 'none', borderRight: 'none'}}>{mirror.status}</td>
-                    </tr>
-                  ))}
-              </tbody>
-            </table>
+            <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+              {vendor.mirrors
+                .slice()
+                .sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'))
+                .map(mirror => (
+                  <div key={mirror.url} style={{
+                    background: '#fff',
+                    borderRadius: 8,
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                    padding: 20,
+                    minWidth: 260,
+                    flex: '1 1 260px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 8
+                  }}>
+                    <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{mirror.name}</div>
+                    <div style={{fontSize: 14, color: '#666'}}>{mirror.desc}</div>
+                    <div style={{fontSize: 14, wordBreak: 'break-all'}}>
+                      <a href={mirror.url} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none'}}>{mirror.url}</a>
+                    </div>
+                    <div style={{fontSize: 14, color: mirror.status === '离线' ? 'red' : '#3578e5', fontWeight: 600}}>{mirror.status}</div>
+                  </div>
+                ))}
+            </div>
           </div>
         ))}
       </div>
@@ -302,156 +476,129 @@ const categories = [
         <div className="alert alert--warning" style={{marginTop: 1, marginBottom: 24}}>
         <strong>提示：</strong> 本站提供的系统镜像均为原版非激活系统镜像，且未经人为修改，请勿用于非法用途。
         </div>
-        <div style={{marginBottom: 32}}>
-          <h3>Windows</h3>
-          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
-            <table style={{minWidth: 600, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-              <thead>
-                <tr>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>版本</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>官方下载</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>第三方下载(原版)</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>维护状态</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最后更新时间</th>
-                </tr>
-              </thead>
-              <tbody>
-                {windowsList.map(item => (
-                  <tr key={item.version}>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.version}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
-                      {item.officialDown ? (
-                        <a href={item.official} target="_blank" rel="noopener">官方下载</a>
-                      ) : (
-                        <span style={{color:'#aaa'}}>已下架</span>
-                      )}
-                    </td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
-                      <a href={item.third} target="_blank" rel="noopener">点击使用迅雷下载</a>
-                    </td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.status}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.lastUpdate}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* Windows 卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Windows</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {windowsList.map(item => (
+              <div key={item.version} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 260,
+                flex: '1 1 260px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 8
+              }}>
+                <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.version}</div>
+                <div style={{fontSize: 14}}>维护状态：{item.status}</div>
+                <div style={{fontSize: 14}}>最后更新时间：{item.lastUpdate}</div>
+                <div style={{marginTop: 8, display: 'flex', gap: 12, alignItems: 'center'}}>
+                  {item.officialDown
+                    ? <a href={item.official} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none'}}>官方下载</a>
+                    : <span style={{color:'#aaa'}}>已下架</span>
+                  }
+                  <span style={{color:'#bbb'}}>|</span>
+                  <a href={item.third} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none'}}>迅雷下载</a>
+                </div>
+              </div>
+            ))}
           </div>
-          <div
-            className="os-table-note"
-            style={{
-              fontSize: 13,
-              lineHeight: 1.7
-            }}
-          >
+          <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
             "最后更新时间"字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
           </div>
         </div>
-        {/* Windows Server表格，紧跟在Windows表格后 */}
-        <div style={{marginBottom: 32}}>
-          <h3>Windows Server</h3>
-          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
-            <table style={{minWidth: 700, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-              <thead>
-                <tr>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>名称</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>发布时间</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>版本</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>位数</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>系统下载</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>维护状态</th>
-                </tr>
-              </thead>
-              <tbody>
-                {windowsServerList.map(item => (
-                  <tr key={item.name + item.version + item.arch}>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.name}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.releaseDate}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.version}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.arch}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>
-                      {item.download
-                        ? <a href={item.download} target="_blank" rel="noopener">下载</a>
-                        : <span style={{color:'#aaa'}}>本站暂未收录</span>
-                      }
-                    </td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.status}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* Windows Server 卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Windows Server</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {windowsServerList.map(item => (
+              <div key={item.name + item.version + item.arch} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 260,
+                flex: '1 1 260px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 8
+              }}>
+                <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.name}</div>
+                <div style={{fontSize: 14}}>发布时间：{item.releaseDate}</div>
+                <div style={{fontSize: 14}}>版本：{item.version}</div>
+                <div style={{fontSize: 14}}>位数：{item.arch}</div>
+                <div style={{fontSize: 14}}>维护状态：{item.status}</div>
+                <div style={{marginTop: 8}}>
+                  {item.download
+                    ? <a href={item.download} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
+                    : <span style={{color:'#aaa'}}>本站暂未收录</span>
+                  }
+                </div>
+              </div>
+            ))}
           </div>
-          <div style={{ fontSize: 13, lineHeight: 1.7, marginTop: 8 }}>
+          <div style={{ fontSize: 13, lineHeight: 1.7, marginTop: 20 }}>
             为了提高维护的效率，本站不提供Windows Server的官方下载直链，仅提供第三方资源。<br/>
             "维护状态"代表微软官方的支持状态，该状态本站可能更新不及时，仅供参考。<br/>
             系统镜像来源于MSDN，下载链接直链到MSDN相应的链接。若遇到下载失败，可能是删除了该资源。
           </div>
         </div>
-        <div style={{marginBottom: 32}}>
-          <h3>macOS</h3>
-          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
-            <table style={{minWidth: 700, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-              <thead>
-                <tr>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>名称</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>发布时间</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>最新版本</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>系统下载</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>芯片要求</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee', borderLeft: 'none', borderRight: 'none'}}>备注</th>
-                </tr>
-              </thead>
-              <tbody>
-                {macosList.map(item => (
-                  <tr key={item.name}>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.name}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.releaseDate}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.latestVersion}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}><a href={item.download} target="_blank" rel="noopener">下载</a></td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.chip}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center', borderLeft: 'none', borderRight: 'none'}}>{item.remark}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* macOS 卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>macOS</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {macosList.map(item => (
+              <div key={item.name} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 260,
+                flex: '1 1 260px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 8
+              }}>
+                <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.name}</div>
+                <div style={{fontSize: 14}}>发布时间：{item.releaseDate}</div>
+                <div style={{fontSize: 14}}>最新版本：{item.latestVersion}</div>
+                <div style={{fontSize: 14}}>芯片要求：{item.chip}</div>
+                {item.remark && <div style={{fontSize: 14, color: '#888'}}>备注：{item.remark}</div>}
+                <div style={{marginTop: 8}}>
+                  <a href={item.download} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
+                </div>
+              </div>
+            ))}
           </div>
-          <div
-            className="os-table-note"
-            style={{
-              fontSize: 13,
-              lineHeight: 1.7
-            }}
-          >
+          <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
             系统镜像下载来源：sysin.org
           </div>
         </div>
-        <div style={{marginBottom: 32}}>
-          <h3>Linux</h3>
-          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
-            <table style={{minWidth: 400, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-              <tbody>
-                {Array.from({length: Math.ceil(linuxList.length / 5)}).map((_, rowIdx) => (
-                  <tr key={rowIdx}>
-                    {linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).map(item => (
-                      <td key={item.url} style={{padding: '12px 8px', textAlign: 'center', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}>
-                        <a href={item.url} target="_blank" rel="noopener">{item.name}</a>
-                      </td>
-                    ))}
-                    {/* 补齐空单元格 */}
-                    {Array.from({length: 5 - linuxList.slice(rowIdx * 5, rowIdx * 5 + 5).length}).map((_, i) => (
-                      <td key={"empty-"+i} style={{padding: '12px 8px', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}></td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* Linux 卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Linux</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {linuxList.map(item => (
+              <div key={item.url} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 220,
+                flex: '1 1 220px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 8,
+                alignItems: 'center'
+              }}>
+                <a href={item.url} target="_blank" rel="noopener" style={{fontWeight: 700, fontSize: 16, color: '#3578e5', textDecoration: 'none', marginBottom: 4}}>{item.name}</a>
+              </div>
+            ))}
           </div>
-          <div
-            className="os-table-note"
-            style={{
-              fontSize: 13,
-              lineHeight: 1.7
-            }}
-          >
+          <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
             由于 Linux 发行版本众多，这里只展示一些。
           </div>
         </div>
@@ -466,61 +613,190 @@ const categories = [
         <div className="alert alert--info" style={{marginBottom: 24}}>
           <strong>提示：</strong> 这里收录主流开发工具及其官方下载地址，后续会不断补充更多软件资源。
         </div>
-        <div style={{marginBottom: 32}}>
-          <h3>JetBrains 全家桶</h3>
-          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
-            <table style={{minWidth: 400, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-              <tbody>
-                {Array.from({length: Math.ceil(jetbrainsList.length / 5)}).map((_, rowIdx) => (
-                  <tr key={rowIdx}>
-                    {jetbrainsList.slice(rowIdx * 5, rowIdx * 5 + 5).map(item => (
-                      <td key={item.url} style={{padding: '12px 8px', textAlign: 'center', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}>
-                        <a href={item.url} target="_blank" rel="noopener">{item.name}</a>
-                      </td>
-                    ))}
-                    {/* 补齐空单元格 */}
-                    {Array.from({length: 5 - jetbrainsList.slice(rowIdx * 5, rowIdx * 5 + 5).length}).map((_, i) => (
-                      <td key={"empty-"+i} style={{padding: '12px 8px', borderLeft: '1px solid #eee', borderRight: '1px solid #eee', borderBottom: 'none', borderTop: 'none'}}></td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* JetBrains 全家桶卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>JetBrains 全家桶</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {jetbrainsList.map(item => (
+              <div key={item.url} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 180,
+                flex: '1 1 180px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 8
+              }}>
+                <a href={item.url} target="_blank" rel="noopener" style={{fontWeight: 700, fontSize: 16, color: '#3578e5', textDecoration: 'none', marginBottom: 4}}>{item.name}</a>
+              </div>
+            ))}
           </div>
         </div>
-        {/* Office办公套件表格 */}
-        <div style={{marginBottom: 32}}>
-          <h3>Office 办公套件</h3>
-          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
-            <table style={{minWidth: 700, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-              <thead>
-                <tr>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>世代</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>版本</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>位数</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>下载</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>维护状态</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>适配系统</th>
-                </tr>
-              </thead>
-              <tbody>
-                {officeList.map(item => (
-                  <tr key={item.gen + item.version + item.os}>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.gen}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.version}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.arch}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}>
-                      {item.download
-                        ? <a href={item.download} target="_blank" rel="noopener">下载</a>
-                        : <span style={{color:'#aaa'}}>本站暂未收录，请前往官网购买/下载</span>
-                      }
-                    </td>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.status}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.os}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* Office办公套件卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Office 办公套件</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {officeList.map(item => (
+              <div key={item.gen + item.version + item.os} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 220,
+                flex: '1 1 220px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 8
+              }}>
+                <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{item.gen} {item.version}</div>
+                <div style={{fontSize: 14}}>位数：{item.arch}</div>
+                <div style={{fontSize: 14}}>适配系统：{item.os}</div>
+                <div style={{fontSize: 14}}>维护状态：{item.status}</div>
+                <div style={{marginTop: 8}}>
+                  {item.download
+                    ? <a href={item.download} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
+                    : <span style={{color:'#aaa'}}>本站暂未收录，请前往官网购买/下载</span>
+                  }
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: 'fonts',
+    label: '字体资源',
+    content: (
+      <div>
+        <div className="alert alert--info" style={{marginBottom: 24}}>
+          <strong>提示：</strong> 这里收录主流品牌字体，点击右侧按钮可下载字体文件。下方样句已用对应字体渲染，供预览效果参考。
+        </div>
+        {/* OPPO 字体 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>OPPO</h3>
+          <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+            {fontResourceList.filter(f => f.file.startsWith('/fonts/OPPO/')).map(font => (
+              <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                <style>{`
+                  @font-face {
+                    font-family: '${font.name}';
+                    src: url('${font.file}');
+                    font-display: swap;
+                  }
+                `}</style>
+                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                  <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                  <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                </div>
+                <div style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{font.sample}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* 阿里巴巴字体 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>阿里巴巴</h3>
+          <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+            {fontResourceList.filter(f => f.file.startsWith('/fonts/Alibaba/')).map(font => (
+              <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                <style>{`
+                  @font-face {
+                    font-family: '${font.name}';
+                    src: url('${font.file}');
+                    font-display: swap;
+                  }
+                `}</style>
+                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                  <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                  <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                </div>
+                <div style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{font.sample}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* 华为 HarmonyOS 字体 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>华为（HarmonyOS）</h3>
+          <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+            {fontResourceList.filter(f => f.file.startsWith('/fonts/HarmonyOS/')).map(font => (
+              <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                <style>{`
+                  @font-face {
+                    font-family: '${font.name}';
+                    src: url('${font.file}');
+                    font-display: swap;
+                  }
+                `}</style>
+                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                  <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                  <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                </div>
+                <div style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{font.sample}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* 荣耀 HONOR 字体 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>荣耀 HONOR</h3>
+          <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+            {fontResourceList.filter(f => f.file.startsWith('/fonts/HONOR/')).map(font => (
+              <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                <style>{`
+                  @font-face {
+                    font-family: '${font.name}';
+                    src: url('${font.file}');
+                    font-display: swap;
+                  }
+                `}</style>
+                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                  <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                  <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                </div>
+                <div style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{font.sample}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: 'ui',
+    label: 'UI资源',
+    content: (
+      <div>
+        <div className="alert alert--info" style={{marginBottom: 24}}>
+          <strong>提示：</strong> 这里收录主流UI设计、图标、插画、图片等资源网站，助力开发者和设计师高效获取优质素材。
+        </div>
+        {/* UI资源卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>UI/设计/图标/插画/图片资源</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {uiResourceList.map(item => (
+              <div key={item.url} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 220,
+                flex: '1 1 220px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 8
+              }}>
+                <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{item.name}</div>
+                <div style={{fontSize: 14, color: '#666', marginBottom: 4}}>{item.desc}</div>
+                <a href={item.url} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none', fontSize: 14}}>{item.url}</a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -546,32 +822,30 @@ const categories = [
         <div className="alert alert--info" style={{marginBottom: 24}}>
           <strong>提示：</strong> 这里收录杂七杂八的实用工具，包括开发辅助、数据分析、团队协作等资源。
         </div>
-        {/* Docker 国内实时有效源表格 */}
-        <div style={{marginBottom: 32}}>
-          <h3>Docker 国内实时有效源</h3>
-          <div style={{overflowX: 'auto', maxWidth: '100vw'}}>
-            <table className="docker-mirror-table" style={{minWidth: 400, width: '100%', borderCollapse: 'collapse', background: 'inherit', marginBottom: 8, border: 'none'}}>
-              <thead>
-                <tr>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>供应商</th>
-                  <th style={{textAlign: 'center', padding: '6px 12px', borderBottom: '1px solid #eee'}}>镜像地址</th>
-                </tr>
-              </thead>
-              <tbody>
-                {dockerMirrorList.map(item => (
-                  <tr key={item.vendor}>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}>{item.vendor}</td>
-                    <td style={{padding: '6px 12px', textAlign: 'center'}}><a href={item.url} target="_blank" rel="noopener">{item.url}</a></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        {/* Docker 国内实时有效源卡片分组 */}
+        <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+          <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Docker 国内实时有效源</h3>
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+            {dockerMirrorList.map(item => (
+              <div key={item.vendor} style={{
+                background: '#fff',
+                borderRadius: 8,
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: 20,
+                minWidth: 220,
+                flex: '1 1 220px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 8
+              }}>
+                <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{item.vendor}</div>
+                <a href={item.url} target="_blank" rel="noopener" style={{color: '#3578e5', textDecoration: 'none', fontSize: 14}}>{item.url}</a>
+              </div>
+            ))}
           </div>
         </div>
-        <div
-          className="os-table-note"
-          style={{ fontSize: 13, lineHeight: 1.7 }}
-        >
+        <div className="os-table-note" style={{ fontSize: 13, lineHeight: 1.7 }}>
           会根据实测不定时每日更新
         </div>
       </div>
