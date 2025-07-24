@@ -55,3 +55,18 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.os-table-note {
+  font-size: 13px;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  color: #222;
+}
+[data-theme='dark'] .os-table-note {
+  color: #fff;
+}
+
+.docker-mirror-table th, .docker-mirror-table td {
+  border-left: none !important;
+  border-right: none !important;
+}
