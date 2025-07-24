@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import { useColorMode } from '@docusaurus/theme-common';
+import { useLocation, useHistory } from '@docusaurus/router';
 
 // 定义镜像类型，包含 status 字段
 interface Mirror {
@@ -250,7 +251,7 @@ const categories = [
     ),
   },
   {
-    key: 'tools',
+    key: 'os',
     label: '操作系统',
     content: (
       <div>
@@ -598,10 +599,26 @@ function ToolsContent({ selected, setSelected }: { selected: string; setSelected
 }
 
 export default function Tools() {
-  const [selected, setSelected] = useState('mirrors');
+  const location = useLocation();
+  const history = useHistory();
+
+  // 读取 tab 参数
+  const params = new URLSearchParams(location.search);
+  const initialTab = params.get('tab') || 'mirrors';
+
+  const [selected, setSelected] = useState(initialTab);
+
+  // 切换 tab 时，更新 URL
+  const handleSetSelected = (key: string) => {
+    setSelected(key);
+    const newParams = new URLSearchParams(location.search);
+    newParams.set('tab', key);
+    history.replace({ search: newParams.toString() });
+  };
+
   return (
     <Layout title="工具库" description="常用镜像源、开发工具、教程网站等资源大全">
-      <ToolsContent selected={selected} setSelected={setSelected} />
+      <ToolsContent selected={selected} setSelected={handleSetSelected} />
     </Layout>
   );
 }
