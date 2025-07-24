@@ -7,6 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import { projects } from '../data/projects';
 import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
+import { useEffect } from 'react';
 
 import styles from './index.module.css';
 
@@ -64,12 +65,6 @@ function LatestProjects() {
 }
 
 function LatestTutorialAndBlog() {
-  // 最新博客自动抓取
-  let latestBlog = null;
-  try {
-    const blogPost = useBlogPost?.();
-    latestBlog = blogPost?.metadata;
-  } catch (e) {}
   return (
     <section style={{maxWidth: 900, margin: '2rem auto', padding: '1rem', background: '#fff', borderRadius: 12}}>
       <h2>最新内容</h2>
@@ -81,15 +76,13 @@ function LatestTutorialAndBlog() {
           <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>详细介绍如何在 macOS 上通过 Homebrew 或官网下载方式安装 Python，并区分 Intel/Apple Silicon 芯片，包含 pip 使用说明。</div>
           <Link to="/docs/install_python/macos-install">查看教程 &rarr;</Link>
         </div>
-        {/* 最新博客（自动） */}
-        {latestBlog && (
-          <div style={{flex: 1, minWidth: 260, background: '#f8f9fa', borderRadius: 12, padding: 20}}>
-            <h3>最新博客</h3>
-            <div style={{fontWeight: 600}}>{latestBlog.title}</div>
-            <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>{latestBlog.description || ''}</div>
-            <Link to={latestBlog.permalink}>阅读全文 &rarr;</Link>
-          </div>
-        )}
+        {/* 最新博客（手动维护） */}
+        <div style={{flex: 1, minWidth: 260, background: '#f8f9fa', borderRadius: 12, padding: 20}}>
+          <h3>最新博客</h3>
+          <div style={{fontWeight: 600}}>快速搭建一个基于Flask的API教务系统</div>
+          <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>EasyEAMS 是一个基于 Flask + Jinja2 的现代化教务系统 Web 应用，支持学生自助查询成绩、课表、学业等。</div>
+          <Link to="/blog/搭建一个快捷教务系统">阅读全文 &rarr;</Link>
+        </div>
       </div>
     </section>
   );
