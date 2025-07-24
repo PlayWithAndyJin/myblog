@@ -39,7 +39,8 @@ function AnnouncementBar() {
       fontSize: 16,
       boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
     }}>
-      🎉 本站已上线，欢迎访问与交流！
+      🎉 本站已上线，欢迎访问与交流!<br/>
+      工具库已升级全新上线，欢迎体验与交流！
     </div>
   );
 }
