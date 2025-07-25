@@ -48,7 +48,7 @@ function AnnouncementBar() {
 function LatestProjects() {
   const latest = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
   return (
-    <section style={{maxWidth: 900, margin: '2rem auto', padding: '1rem'}}>
+    <section className="force-black" style={{maxWidth: 900, margin: '2rem auto', padding: '1rem'}}>
       <h2>最新项目</h2>
       <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
         {latest.map((project, idx) => (
@@ -86,22 +86,22 @@ function LatestProjects() {
 
 function LatestTutorialAndBlog() {
   return (
-    <section style={{maxWidth: 900, margin: '2rem auto', padding: '1rem', background: '#fff', borderRadius: 12}}>
+    <section className="force-black" style={{maxWidth: 900, margin: '2rem auto', padding: '1rem', background: '#fff', borderRadius: 12}}>
       <h2>最新内容</h2>
       <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
         {/* 最新教程（手动维护） */}
         <div style={{flex: 1, minWidth: 260, background: '#f8f9fa', borderRadius: 12, padding: 20}}>
           <h3>最新教程</h3>
-          <div style={{fontWeight: 600}}>快速部署这个网站</div>
-          <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>详细介绍如何在本地或服务器上安装、开发和部署本博客网站（基于 Docusaurus 2）。</div>
-          <Link to="/docs/install_this_website">查看教程 &rarr;</Link>
+          <div style={{fontWeight: 600}}>macOS 安装 Python</div>
+          <div style={{fontSize: 14, margin: '8px 0'}}>详细介绍如何在 macOS 上通过 Homebrew 或官网下载方式安装 Python，并区分 Intel/Apple Silicon 芯片，包含 pip 使用说明。</div>
+          <Link to="/docs/install_this_website" className="force-black-ignore">查看教程 &rarr;</Link>
         </div>
         {/* 最新博客（手动维护） */}
         <div style={{flex: 1, minWidth: 260, background: '#f8f9fa', borderRadius: 12, padding: 20}}>
           <h3>最新博客</h3>
           <div style={{fontWeight: 600}}>快速搭建一个基于Flask的API教务系统</div>
-          <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>EasyEAMS 是一个基于 Flask + Jinja2 的现代化教务系统 Web 应用，支持学生自助查询成绩、课表、学业等。</div>
-          <Link to="/blog/搭建一个快捷教务系统">阅读全文 &rarr;</Link>
+          <div style={{fontSize: 14, margin: '8px 0'}}>EasyEAMS 是一个基于 Flask + Jinja2 的现代化教务系统 Web 应用，支持学生自助查询成绩、课表、学业等。</div>
+          <Link to="/blog/搭建一个快捷教务系统" className="force-black-ignore">阅读全文 &rarr;</Link>
         </div>
       </div>
     </section>
