@@ -92,8 +92,8 @@ function LatestTutorialAndBlog() {
         {/* 最新教程（手动维护） */}
         <div style={{flex: 1, minWidth: 260, background: '#f8f9fa', borderRadius: 12, padding: 20}}>
           <h3>最新教程</h3>
-          <div style={{fontWeight: 600}}>macOS 安装 Python</div>
-          <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>详细介绍如何在 macOS 上通过 Homebrew 或官网下载方式安装 Python，并区分 Intel/Apple Silicon 芯片，包含 pip 使用说明。</div>
+          <div style={{fontWeight: 600}}>快速部署这个网站</div>
+          <div style={{fontSize: 14, color: '#666', margin: '8px 0'}}>详细介绍如何在本地或服务器上安装、开发和部署本博客网站（基于 Docusaurus 2）。</div>
           <Link to="/docs/install_this_website">查看教程 &rarr;</Link>
         </div>
         {/* 最新博客（手动维护） */}
