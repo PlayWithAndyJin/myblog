@@ -96,6 +96,9 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    metadata: [
+      { name: 'baidu-site-verification', content: 'codeva-2t30PG2w5h' },
+    ],
   } satisfies Preset.ThemeConfig,
 };
 
