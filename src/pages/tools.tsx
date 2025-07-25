@@ -1120,6 +1120,126 @@ const fontResourceList = [
     },
 ];
 
+function FontsPanel() {
+    const defaultSample = '世界你好 123456 Hello World';
+    const [sample, setSample] = React.useState(defaultSample);
+    return (
+        <div>
+            <div className="alert alert--info" style={{marginBottom: 24}}>
+                <strong>提示：</strong> 这里收录主流品牌字体，点击右侧按钮可下载字体文件。下方样句已用对应字体渲染，供预览效果参考。浏览该界面我建议用户关闭设备的深色模式并将本站调至亮色模式，这样阅览字体的感受会好些。
+            </div>
+            <div style={{margin: '0 0 24px 0', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2}}>
+                <span style={{fontSize: 15, color: '#222', whiteSpace: 'nowrap'}}>自定义样例：</span>
+                <input
+                    type="text"
+                    value={sample}
+                    onChange={e => setSample(e.target.value)}
+                    placeholder="所有字体将同步显示"
+                    style={{
+                        width: '100%',
+                        maxWidth: 480,
+                        padding: '10px 16px',
+                        fontSize: 16,
+                        borderRadius: 8,
+                        border: '1px solid #ddd',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                        outline: 'none',
+                        margin: '0 auto',
+                    }}
+                />
+            </div>
+            {/* OPPO 字体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>OPPO</h3>
+                <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                    {fontResourceList.filter(f => f.file.startsWith('/fonts/OPPO/')).map(font => (
+                        <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                            <style>{`
+              @font-face {
+                font-family: '${font.name}';
+                src: url('${font.file}');
+                font-display: swap;
+              }
+            `}</style>
+                            <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                                <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                            </div>
+                            <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* 阿里巴巴字体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>阿里巴巴</h3>
+                <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                    {fontResourceList.filter(f => f.file.startsWith('/fonts/Alibaba/')).map(font => (
+                        <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                            <style>{`
+              @font-face {
+                font-family: '${font.name}';
+                src: url('${font.file}');
+                font-display: swap;
+              }
+            `}</style>
+                            <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                                <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                            </div>
+                            <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* 华为 HarmonyOS 字体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>华为（HarmonyOS）</h3>
+                <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                    {fontResourceList.filter(f => f.file.startsWith('/fonts/HarmonyOS/')).map(font => (
+                        <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                            <style>{`
+              @font-face {
+                font-family: '${font.name}';
+                src: url('${font.file}');
+                font-display: swap;
+              }
+            `}</style>
+                            <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                                <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                            </div>
+                            <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* 荣耀 HONOR 字体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>荣耀 HONOR</h3>
+                <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                    {fontResourceList.filter(f => f.file.startsWith('/fonts/HONOR/')).map(font => (
+                        <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                            <style>{`
+              @font-face {
+                font-family: '${font.name}';
+                src: url('${font.file}');
+                font-display: swap;
+              }
+            `}</style>
+                            <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                                <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                            </div>
+                            <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
 const categories = [
     {
         key: 'mirrors',
@@ -1165,7 +1285,7 @@ const categories = [
                                             fontSize: 16,
                                             color: '#3578e5'
                                         }}>{mirror.name}</div>
-                                        <div style={{fontSize: 14, color: '#666'}}>{mirror.desc}</div>
+                                        <div className="force-black" style={{fontSize: 14}}>{mirror.desc}</div>
                                         <div style={{fontSize: 14, wordBreak: 'break-all'}}>
                                             <a href={mirror.url} target="_blank" rel="noopener"
                                                style={{color: '#3578e5', textDecoration: 'none'}}>{mirror.url}</a>
@@ -1328,7 +1448,7 @@ const categories = [
                                 <div style={{fontSize: 14}}>发布时间：{item.releaseDate}</div>
                                 <div style={{fontSize: 14}}>最新版本：{item.latestVersion}</div>
                                 <div style={{fontSize: 14}}>芯片要求：{item.chip}</div>
-                                {item.remark && <div style={{fontSize: 14, color: '#888'}}>备注：{item.remark}</div>}
+                                {item.remark && <div className="force-black" style={{fontSize: 14}}>备注：{item.remark}</div>}
                                 <div style={{marginTop: 8}}>
                                     <a href={item.download} target="_blank" rel="noopener"
                                        style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
@@ -1516,8 +1636,8 @@ const categories = [
                                     textDecoration: 'none',
                                     marginBottom: 4
                                 }}>{tool.name}</a>
-                                <div style={{fontSize: 14, color: '#666'}}>{tool.desc}</div>
-                                <div style={{fontSize: 13, color: '#888'}}>适配系统：{tool.os}</div>
+                                <div className="force-black" style={{fontSize: 14}}>{tool.desc}</div>
+                                <div className="force-black" style={{fontSize: 13}}>{tool.os}</div>
                                 <div style={{
                                     display: 'flex',
                                     gap: 6,
@@ -1637,8 +1757,8 @@ const categories = [
                                     textDecoration: 'none',
                                     marginBottom: 4
                                 }}>{tool.name}</a>
-                                <div style={{fontSize: 14, color: '#666'}}>{tool.desc}</div>
-                                <div style={{fontSize: 13, color: '#888'}}>适配系统：{tool.os}</div>
+                                <div className="force-black" style={{fontSize: 14}}>{tool.desc}</div>
+                                <div className="force-black" style={{fontSize: 13}}>{tool.os}</div>
                                 <div style={{
                                     display: 'flex',
                                     gap: 6,
@@ -1727,196 +1847,7 @@ const categories = [
     {
         key: 'fonts',
         label: '字体资源',
-        content: (
-            <div>
-                <div className="alert alert--info" style={{marginBottom: 24}}>
-                    <strong>提示：</strong> 这里收录主流品牌字体，点击右侧按钮可下载字体文件。下方样句已用对应字体渲染，供预览效果参考。浏览该界面我建议用户关闭设备的深色模式并将本站调至亮色模式，这样阅览字体的感受会好些。
-                </div>
-                {/* OPPO 字体 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>OPPO</h3>
-                    <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
-                        {fontResourceList.filter(f => f.file.startsWith('/fonts/OPPO/')).map(font => (
-                            <div key={font.name}
-                                 style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
-                                <style>{`
-                  @font-face {
-                    font-family: '${font.name}';
-                    src: url('${font.file}');
-                    font-display: swap;
-                  }
-                `}</style>
-                                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
-                                    <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                    <a href={font.file} download style={{
-                                        padding: '4px 16px',
-                                        background: '#3578e5',
-                                        color: '#fff',
-                                        borderRadius: 4,
-                                        textDecoration: 'none',
-                                        fontSize: 14
-                                    }}>下载</a>
-                                </div>
-                                <div style={{
-                                    marginTop: 8,
-                                    fontSize: 20,
-                                    fontFamily: `'${font.name}', sans-serif`
-                                }}>{font.sample}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                {/* 阿里巴巴字体 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>阿里巴巴</h3>
-                    <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
-                        {fontResourceList.filter(f => f.file.startsWith('/fonts/Alibaba/')).map(font => (
-                            <div key={font.name}
-                                 style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
-                                <style>{`
-                  @font-face {
-                    font-family: '${font.name}';
-                    src: url('${font.file}');
-                    font-display: swap;
-                  }
-                `}</style>
-                                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
-                                    <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                    <a href={font.file} download style={{
-                                        padding: '4px 16px',
-                                        background: '#3578e5',
-                                        color: '#fff',
-                                        borderRadius: 4,
-                                        textDecoration: 'none',
-                                        fontSize: 14
-                                    }}>下载</a>
-                                </div>
-                                <div style={{
-                                    marginTop: 8,
-                                    fontSize: 20,
-                                    fontFamily: `'${font.name}', sans-serif`
-                                }}>{font.sample}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                {/* 华为 HarmonyOS 字体 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>华为（HarmonyOS）</h3>
-                    <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
-                        {fontResourceList.filter(f => f.file.startsWith('/fonts/HarmonyOS/')).map(font => (
-                            <div key={font.name}
-                                 style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
-                                <style>{`
-                  @font-face {
-                    font-family: '${font.name}';
-                    src: url('${font.file}');
-                    font-display: swap;
-                  }
-                `}</style>
-                                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
-                                    <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                    <a href={font.file} download style={{
-                                        padding: '4px 16px',
-                                        background: '#3578e5',
-                                        color: '#fff',
-                                        borderRadius: 4,
-                                        textDecoration: 'none',
-                                        fontSize: 14
-                                    }}>下载</a>
-                                </div>
-                                <div style={{
-                                    marginTop: 8,
-                                    fontSize: 20,
-                                    fontFamily: `'${font.name}', sans-serif`
-                                }}>{font.sample}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                {/* 荣耀 HONOR 字体 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>荣耀
-                        HONOR</h3>
-                    <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
-                        {fontResourceList.filter(f => f.file.startsWith('/fonts/HONOR/')).map(font => (
-                            <div key={font.name}
-                                 style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
-                                <style>{`
-                  @font-face {
-                    font-family: '${font.name}';
-                    src: url('${font.file}');
-                    font-display: swap;
-                  }
-                `}</style>
-                                <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
-                                    <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                    <a href={font.file} download style={{
-                                        padding: '4px 16px',
-                                        background: '#3578e5',
-                                        color: '#fff',
-                                        borderRadius: 4,
-                                        textDecoration: 'none',
-                                        fontSize: 14
-                                    }}>下载</a>
-                                </div>
-                                <div style={{
-                                    marginTop: 8,
-                                    fontSize: 20,
-                                    fontFamily: `'${font.name}', sans-serif`
-                                }}>{font.sample}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        ),
+        content: <FontsPanel />,
     },
     {
         key: 'ui',
@@ -1957,7 +1888,7 @@ const categories = [
                                 gap: 8
                             }}>
                                 <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{item.name}</div>
-                                <div style={{fontSize: 14, color: '#666', marginBottom: 4}}>{item.desc}</div>
+                                <div className="force-black" style={{fontSize: 14, marginBottom: 4}}>{item.desc}</div>
                                 <a href={item.url} target="_blank" rel="noopener"
                                    style={{color: '#3578e5', textDecoration: 'none', fontSize: 14}}>{item.url}</a>
                             </div>
@@ -2286,7 +2217,7 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
             )}
             <main style={{flex: 1, padding: '2rem', width: '100%'}}>
                 <h2 style={{marginTop: 0}}>{current?.label}</h2>
-                {current?.content}
+                {selected === 'fonts' ? <FontsPanel /> : current?.content}
             </main>
         </div>
     );
