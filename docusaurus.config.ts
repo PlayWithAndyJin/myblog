@@ -79,6 +79,7 @@ const config: Config = {
         {to: '/blog', label: '博客', position: 'left'},
         { to: '/projects', label: '项目', position: 'left' },
         { to: '/tools', label: '工具库', position: 'left' },
+        { to: '/site_update', label: '更新日志', position: 'left' },
         {
           href: 'https://github.com/PlayWithAndyJin?tab=repositories',
           label: 'GitHub',
