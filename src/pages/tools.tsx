@@ -1118,6 +1118,175 @@ const fontResourceList = [
         sample: 'The quick brown fox jumps over the lazy dog',
         lang: 'en',
     },
+    // vivo
+    {
+        name: 'vivo Sans ENVF（可变字体）',
+        file: '/fonts/vivo/vivoSansENVF.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 简体中文 L3 (生僻字)',
+        file: '/fonts/vivo/vivo Sans SC L3.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans Global 常规体',
+        file: '/fonts/vivo/vivoSansGlobal-Regular.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 常规体',
+        file: '/fonts/vivo/vivoSans-Regular.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 紧凑斜体 VF',
+        file: '/fonts/vivo/vivoSansCompItalicVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 扩展斜体 VF',
+        file: '/fonts/vivo/vivoSansExpItalicVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 扩展 VF',
+        file: '/fonts/vivo/vivoSansExpVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 紧凑斜体 VF',
+        file: '/fonts/vivo/vivoSansCondItalicVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 紧凑 VF',
+        file: '/fonts/vivo/vivoSansCondVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 紧凑 VF',
+        file: '/fonts/vivo/vivoSansCompVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 标准斜体 VF',
+        file: '/fonts/vivo/vivoSansStdItalicVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'vivo Sans 标准 VF',
+        file: '/fonts/vivo/vivoSansStdVF.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+        vivo: true,
+    },
+    {
+        name: 'MiSans 极细',
+        file: '/fonts/xiaomi/MiSans-Thin.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+    },
+    {
+        name: 'MiSans 特细',
+        file: '/fonts/xiaomi/MiSans-ExtraLight.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+    },
+    {
+        name: 'MiSans 细',
+        file: '/fonts/xiaomi/MiSans-Light.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+    },
+    {
+        name: 'MiSans 常规',
+        file: '/fonts/xiaomi/MiSans-Normal.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+    },
+    {
+        name: 'MiSans 标准',
+        file: '/fonts/xiaomi/MiSans-Regular.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+    },
+    {
+        name: 'MiSans 中等',
+        file: '/fonts/xiaomi/MiSans-Medium.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+    },
+    {
+        name: 'MiSans 半粗',
+        file: '/fonts/xiaomi/MiSans-Demibold.ttf',
+        sample: '世界你好 123456 Hello World',
+        lang: 'zh',
+    },
+    {
+        name: 'MiSans Latin 极细',
+        file: '/fonts/xiaomi/MiSansLatin-Thin.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+    },
+    {
+        name: 'MiSans Latin 特细',
+        file: '/fonts/xiaomi/MiSansLatin-ExtraLight.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+    },
+    {
+        name: 'MiSans Latin 细',
+        file: '/fonts/xiaomi/MiSansLatin-Light.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+    },
+    {
+        name: 'MiSans Latin 常规',
+        file: '/fonts/xiaomi/MiSansLatin-Normal.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+    },
+    {
+        name: 'MiSans Latin 标准',
+        file: '/fonts/xiaomi/MiSansLatin-Regular.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+    },
+    {
+        name: 'MiSans Latin 中等',
+        file: '/fonts/xiaomi/MiSansLatin-Medium.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+    },
+    {
+        name: 'MiSans Latin 半粗',
+        file: '/fonts/xiaomi/MiSansLatin-Demibold.ttf',
+        sample: 'The quick brown fox jumps over the lazy dog',
+        lang: 'en',
+    },
 ];
 
 function FontsPanel() {
@@ -1232,6 +1401,113 @@ function FontsPanel() {
                                 <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* vivo 字体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>vivo</h3>
+                <div className="force-black" style={{marginBottom: 16, fontSize: 15, background: '#fffbe6', borderRadius: 8, padding: '10px 16px', lineHeight: 1.7}}>
+                  由于 vivo 官方限制字体包再分发，本站仅供预览，下载请前往 vivo 开发者官网获取授权与字体包。
+                </div>
+                <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                    {fontResourceList.filter(f => f.file.startsWith('/fonts/vivo/')).map(font => (
+                        <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                            <style>{`@font-face { font-family: '${font.name}'; src: url('${font.file}'); font-display: swap; }`}</style>
+                            <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                                <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                                <a href="https://developers.vivo.com/doc/d/314fa33cbaec4a93be351cd44757d9d9" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>去官网下载</a>
+                            </div>
+                            <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>
+                              {font.name.includes('L3') ? '龘 䶮 麤 黷 鱻 灥 鸂 纛' : (sample || font.sample)}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* 思源黑体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>思源黑体</h3>
+                <style>{`
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 100; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-ExtraLight.otf') format('opentype'); font-display: swap; }
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 200; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-Light.otf') format('opentype'); font-display: swap; }
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 300; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-Normal.otf') format('opentype'); font-display: swap; }
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 400; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-Regular.otf') format('opentype'); font-display: swap; }
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 500; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-Medium.otf') format('opentype'); font-display: swap; }
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 600; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-Bold.otf') format('opentype'); font-display: swap; }
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 700; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-Heavy.otf') format('opentype'); font-display: swap; }
+                  @font-face { font-family: 'Source Han Sans SC'; font-weight: 900; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-sans/1.001/SourceHanSansSC-Black.otf') format('opentype'); font-display: swap; }
+                `}</style>
+                <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                  {[{name: '极细', weight: 100}, {name: '特细', weight: 200}, {name: '细', weight: 300}, {name: '常规', weight: 400}, {name: '中等', weight: 500}, {name: '粗', weight: 600}, {name: '特粗', weight: 700}, {name: '黑体', weight: 900}].map(font => (
+                    <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                      <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                        <span style={{fontWeight: 600, fontSize: 18}}>思源黑体 {font.name}</span>
+                      </div>
+                      <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: 'Source Han Sans SC, sans-serif', fontWeight: font.weight}}>{sample || defaultSample}</div>
+                    </div>
+                  ))}
+                </div>
+            </div>
+            {/* 思源宋体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+              <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>思源宋体</h3>
+              <style>{`
+                @font-face { font-family: 'Source Han Serif SC'; font-weight: 200; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-serif/1.001/SourceHanSerifSC-ExtraLight.otf') format('opentype'); font-display: swap; }
+                @font-face { font-family: 'Source Han Serif SC'; font-weight: 300; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-serif/1.001/SourceHanSerifSC-Light.otf') format('opentype'); font-display: swap; }
+                @font-face { font-family: 'Source Han Serif SC'; font-weight: 400; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-serif/1.001/SourceHanSerifSC-Regular.otf') format('opentype'); font-display: swap; }
+                @font-face { font-family: 'Source Han Serif SC'; font-weight: 500; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-serif/1.001/SourceHanSerifSC-Medium.otf') format('opentype'); font-display: swap; }
+                @font-face { font-family: 'Source Han Serif SC'; font-weight: 600; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-serif/1.001/SourceHanSerifSC-SemiBold.otf') format('opentype'); font-display: swap; }
+                @font-face { font-family: 'Source Han Serif SC'; font-weight: 700; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-serif/1.001/SourceHanSerifSC-Bold.otf') format('opentype'); font-display: swap; }
+                @font-face { font-family: 'Source Han Serif SC'; font-weight: 900; src: url('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/source-han-serif/1.001/SourceHanSerifSC-Heavy.otf') format('opentype'); font-display: swap; }
+              `}</style>
+              <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                {[{name: '极细', weight: 200}, {name: '特细', weight: 300}, {name: '常规', weight: 400}, {name: '中等', weight: 500}, {name: '半粗', weight: 600}, {name: '粗', weight: 700}, {name: '特粗', weight: 900}].map(font => (
+                  <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                    <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                      <span style={{fontWeight: 600, fontSize: 18}}>思源宋体 {font.name}</span>
+                    </div>
+                    <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: 'Source Han Serif SC, serif', fontWeight: font.weight}}>{sample || defaultSample}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* 小米字体 */}
+            <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>小米</h3>
+                <div style={{display: 'flex', flexDirection: 'column', gap: 32}}>
+                    {fontResourceList.filter(f => f.file.startsWith('/fonts/xiaomi/') && !f.name.includes('L3')).map(font => (
+                        <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                            <style>{`
+              @font-face {
+                font-family: '${font.name}';
+                src: url('${font.file}');
+                font-display: swap;
+              }
+            `}</style>
+                            <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                                <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
+                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                            </div>
+                            <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
+                        </div>
+                    ))}
+                    {/* L3 特殊展示 */}
+                    {fontResourceList.filter(f => f.file.startsWith('/fonts/xiaomi/') && f.name.includes('L3')).map(font => (
+                        <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
+                            <style>{`
+              @font-face {
+                font-family: '${font.name}';
+                src: url('${font.file}');
+                font-display: swap;
+              }
+            `}</style>
+                            <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
+                                <span style={{fontWeight: 600, fontSize: 18}}>{font.name}（生僻字专用）</span>
+                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                            </div>
+                            <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>龘 䶮 麤 黷 鱻 灥 鸂 纛</div>
                         </div>
                     ))}
                 </div>
@@ -1845,6 +2121,52 @@ const categories = [
         ),
     },
     {
+        key: 'others',
+        label: '其他资源',
+        content: (
+            <div>
+                <div className="alert alert--info" style={{marginBottom: 24}}>
+                    <strong>提示：</strong> 这里收录杂七杂八的实用工具，包括开发辅助、数据分析、团队协作等资源。
+                </div>
+                {/* Docker 国内实时有效源卡片分组 */}
+                <div style={{
+                    marginTop: 32,
+                    marginBottom: 32,
+                    background: '#f6f8fa',
+                    borderRadius: 12,
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                    padding: 24
+                }}>
+                    <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Docker
+                        国内实时有效源</h3>
+                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {dockerMirrorList.map(item => (
+                            <div key={item.vendor} style={{
+                                background: '#fff',
+                                borderRadius: 8,
+                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                                padding: 20,
+                                minWidth: 220,
+                                flex: '1 1 220px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                gap: 8
+                            }}>
+                                <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{item.vendor}</div>
+                                <a href={item.url} target="_blank" rel="noopener"
+                                   style={{color: '#3578e5', textDecoration: 'none', fontSize: 14}}>{item.url}</a>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7}}>
+                    会根据实测不定时每日更新
+                </div>
+            </div>
+        ),
+    },
+    {
         key: 'fonts',
         label: '字体资源',
         content: <FontsPanel />,
@@ -1894,181 +2216,6 @@ const categories = [
                             </div>
                         ))}
                     </div>
-                </div>
-            </div>
-        ),
-    },
-    {
-        key: 'tutorials',
-        label: '教程网站',
-        content: (
-            <div>
-                <div className="alert alert--info" style={{marginBottom: 24}}>
-                    <strong>提示：</strong> 这里收录主流开发、AI、编程等领域的权威教程网站。
-                </div>
-                {/* AI开发文档分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>AI开发文档</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        <div style={{
-                            background: '#fff',
-                            borderRadius: 8,
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                            padding: 20,
-                            minWidth: 220,
-                            flex: '1 1 220px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            gap: 8
-                        }}>
-                            <a href="https://docs.python.org/zh-cn/3/" target="_blank" rel="noopener" style={{
-                                fontWeight: 700,
-                                fontSize: 16,
-                                color: '#3578e5',
-                                textDecoration: 'none',
-                                marginBottom: 4
-                            }}>Python 官方文档</a>
-                        </div>
-                        <div style={{
-                            background: '#fff',
-                            borderRadius: 8,
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                            padding: 20,
-                            minWidth: 220,
-                            flex: '1 1 220px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            gap: 8
-                        }}>
-                            <a href="https://pytorch.apachecn.org/" target="_blank" rel="noopener" style={{
-                                fontWeight: 700,
-                                fontSize: 16,
-                                color: '#3578e5',
-                                textDecoration: 'none',
-                                marginBottom: 4
-                            }}>PyTorch 中文文档</a>
-                        </div>
-                        <div style={{
-                            background: '#fff',
-                            borderRadius: 8,
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                            padding: 20,
-                            minWidth: 220,
-                            flex: '1 1 220px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            gap: 8
-                        }}>
-                            <a href="https://tensorflow.google.cn/" target="_blank" rel="noopener" style={{
-                                fontWeight: 700,
-                                fontSize: 16,
-                                color: '#3578e5',
-                                textDecoration: 'none',
-                                marginBottom: 4
-                            }}>TensorFlow 中文文档</a>
-                        </div>
-                    </div>
-                </div>
-                {/* 编程教学分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>编程教学</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        <div style={{
-                            background: '#fff',
-                            borderRadius: 8,
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                            padding: 20,
-                            minWidth: 220,
-                            flex: '1 1 220px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            gap: 8
-                        }}>
-                            <a href="https://www.runoob.com/" target="_blank" rel="noopener" style={{
-                                fontWeight: 700,
-                                fontSize: 16,
-                                color: '#3578e5',
-                                textDecoration: 'none',
-                                marginBottom: 4
-                            }}>菜鸟教程</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        ),
-    },
-    {
-        key: 'others',
-        label: '其他资源',
-        content: (
-            <div>
-                <div className="alert alert--info" style={{marginBottom: 24}}>
-                    <strong>提示：</strong> 这里收录杂七杂八的实用工具，包括开发辅助、数据分析、团队协作等资源。
-                </div>
-                {/* Docker 国内实时有效源卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Docker
-                        国内实时有效源</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {dockerMirrorList.map(item => (
-                            <div key={item.vendor} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 220,
-                                flex: '1 1 220px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                gap: 8
-                            }}>
-                                <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{item.vendor}</div>
-                                <a href={item.url} target="_blank" rel="noopener"
-                                   style={{color: '#3578e5', textDecoration: 'none', fontSize: 14}}>{item.url}</a>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7}}>
-                    会根据实测不定时每日更新
                 </div>
             </div>
         ),
