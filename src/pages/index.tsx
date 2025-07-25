@@ -39,8 +39,45 @@ function AnnouncementBar() {
       fontSize: 16,
       boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
     }}>
-      🎉 本站已上线，欢迎访问与交流!<br/>
-      工具库已升级全新上线，欢迎体验与交流！
+      <style>{`
+        @font-face {
+          font-family: 'Alibaba Dongfangdakai Regular';
+          src: url('/fonts/Alibaba/AlimamaDongFangDaKai-Regular.ttf') format('truetype');
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'Alimama DaoLiTi';
+          src: url('/fonts/Alibaba/AlimamaDaoLiTi.ttf') format('truetype');
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'DingTalk JinBuTi Regular';
+          src: url('/fonts/Alibaba/DingTalkJinBuTi-Regular.ttf') format('truetype');
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'Alimama FangYuanTiVF Thin';
+          src: url('/fonts/Alibaba/AlimamaFangYuanTiVF-Thin.ttf') format('truetype');
+          font-display: swap;
+        }
+      `}</style>
+      <span style={{fontFamily: 'Alibaba Dongfangdakai Regular, serif', fontSize: 24, display: 'inline-block', marginBottom: 2}}>
+        本站已上线，欢迎访问与体验！
+      </span><br/>
+      <span style={{fontFamily: 'Alimama DaoLiTi, serif', fontSize: 22, display: 'inline-block', marginBottom: 2}}>
+        工具库已升级&全新上线，欢迎体验！
+      </span><br/>
+      <div style={{fontWeight: 400, fontSize: 18, textAlign: 'left', margin: '8px auto 0', maxWidth: 600}}>
+        <b style={{fontFamily: 'DingTalk JinBuTi Regular, serif', fontSize: 18}}>本次更新：</b>
+        <ul style={{margin: '8px 0 0 0', paddingLeft: 20, fontFamily: 'Alimama FangYuanTiVF Thin, serif', fontSize: 16}}>
+          <li>收录OPPO、vivo、荣耀、华为、小米、阿里巴巴等多品牌字体。</li>
+          <li>收录清华大学、阿里云、中科大、华为云多种类镜像源。</li>
+          <li>收录Windows、Windows Server、macOS、Linux多版本原版非激活系统镜像。</li>
+          <li>收录JetBrains、Office办公套件、华为开发者工具和微信开发者工具。</li>
+          <li>收录多用途多品类UI设计资源网站。</li>
+          <li>收录Docker国内镜像源等其他实用资源。</li>
+        </ul>
+      </div>
     </div>
   );
 }
@@ -92,8 +129,8 @@ function LatestTutorialAndBlog() {
         {/* 最新教程（手动维护） */}
         <div style={{flex: 1, minWidth: 260, background: '#f8f9fa', borderRadius: 12, padding: 20}}>
           <h3>最新教程</h3>
-          <div style={{fontWeight: 600}}>macOS 安装 Python</div>
-          <div style={{fontSize: 14, margin: '8px 0'}}>详细介绍如何在 macOS 上通过 Homebrew 或官网下载方式安装 Python，并区分 Intel/Apple Silicon 芯片，包含 pip 使用说明。</div>
+          <div style={{fontWeight: 600}}>快速安装部署这个网站</div>
+          <div style={{fontSize: 14, margin: '8px 0'}}>详细介绍如何在本地或服务器上安装、开发和部署本博客网站（基于 Docusaurus 2）。</div>
           <Link to="/docs/install_this_website" className="force-black-ignore">查看教程 &rarr;</Link>
         </div>
         {/* 最新博客（手动维护） */}
@@ -117,6 +154,13 @@ export default function Home(): ReactNode {
     >
       <HomepageHeader />
       <main style={{background: '#fff'}}>
+        <style>{`
+          @font-face {
+            font-family: 'Alibaba Dongfangdakai Regular';
+            src: url('/fonts/Alibaba/AlimamaDongFangDaKai-Regular.ttf') format('truetype');
+            font-display: swap;
+          }
+        `}</style>
         <AnnouncementBar />
         <LatestProjects />
         <LatestTutorialAndBlog />
