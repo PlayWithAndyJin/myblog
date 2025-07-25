@@ -1683,56 +1683,6 @@ const categories = [
                         "最后更新时间"字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
                     </div>
                 </div>
-                {/* Windows Server 卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>Windows Server</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {windowsServerList.map(item => (
-                            <div key={item.name + item.version + item.arch} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 260,
-                                flex: '1 1 260px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: 8
-                            }}>
-                                <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.name}</div>
-                                <div style={{fontSize: 14}}>发布时间：{item.releaseDate}</div>
-                                <div style={{fontSize: 14}}>版本：{item.version}</div>
-                                <div style={{fontSize: 14}}>位数：{item.arch}</div>
-                                <div style={{fontSize: 14}}>维护状态：{item.status}</div>
-                                <div style={{marginTop: 8}}>
-                                    {item.download
-                                        ? <a href={item.download} target="_blank" rel="noopener"
-                                             style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
-                                        : <span style={{color: '#aaa'}}>本站暂未收录</span>
-                                    }
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
-                        为了提高维护的效率，本站不提供Windows Server的官方下载直链，仅提供第三方资源。<br/>
-                        "维护状态"代表微软官方的支持状态，该状态本站可能更新不及时，仅供参考。<br/>
-                        系统镜像来源于MSDN，下载链接直链到MSDN相应的链接。若遇到下载失败，可能是删除了该资源。
-                    </div>
-                </div>
                 {/* macOS 卡片分组 */}
                 <div style={{
                     marginTop: 32,
@@ -2080,7 +2030,6 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
             )}
             <main style={{flex: 1, padding: '2rem', width: '100%'}}>
                 <h2 style={{marginTop: 0}}>{current?.label}</h2>
-                {/* Office办公套件卡片分组自定义弹窗逻辑 */}
                 {selected === 'software' ? (
                   <div>
                     {/* Office办公套件卡片分组（已存在） */}
@@ -2253,7 +2202,119 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
                       </div>
                     )}
                   </div>
-                ) : (selected === 'fonts' ? <FontsPanel /> : current?.content)}
+                ) : selected === 'os' ? (
+                  <>
+                    {categories.find(c => c.key === 'os')?.content}
+                    <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                      <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Windows Server</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {windowsServerList.map(item => (
+                          <div key={item.name + item.version + item.arch} style={{
+                            background: '#fff',
+                            borderRadius: 8,
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                            padding: 20,
+                            minWidth: 260,
+                            flex: '1 1 260px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: 8
+                          }}>
+                            <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.name}</div>
+                            <div style={{fontSize: 14}}>发布时间：{item.releaseDate}</div>
+                            <div style={{fontSize: 14}}>版本：{item.version}</div>
+                            <div style={{fontSize: 14}}>位数：{item.arch}</div>
+                            <div style={{fontSize: 14}}>维护状态：{item.status}</div>
+                            <div style={{marginTop: 8}}>
+                              {item.download
+                                ? <a
+                                    id={'server-download-' + item.name + item.version + item.arch}
+                                    href={item.download}
+                                    rel="noopener"
+                                    style={{color: '#3578e5', textDecoration: 'none'}}
+                                    onClick={e => {
+                                      e.preventDefault();
+                                      setModal({ url: item.download, sys: '', expect: '', id: 'server-download-' + item.name + item.version + item.arch, type: 'link' });
+                                    }}
+                                  >下载</a>
+                                : <span style={{color: '#aaa'}}>本站暂未收录</span>
+                              }
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <div style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
+                        为了提高维护的效率，本站不提供Windows Server的官方下载直链，仅提供第三方资源。<br/>
+                        "维护状态"代表微软官方的支持状态，该状态本站可能更新不及时，仅供参考。<br/>
+                        系统镜像来源于MSDN，下载链接直链到MSDN相应的链接。若遇到下载失败，可能是删除了该资源。
+                      </div>
+                    </div>
+                  </>
+                ) : selected === 'fonts' ? <FontsPanel /> : current?.content}
+                {/* 弹窗... */}
+                {modal && (
+                  <div style={{
+                    position: 'fixed', left: 0, top: 0, width: '100vw', height: '100vh',
+                    background: 'rgba(0,0,0,0.35)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center'
+                  }}>
+                    <div style={{
+                      background: '#fff', borderRadius: 12, padding: 32, minWidth: 320, boxShadow: '0 4px 24px rgba(0,0,0,0.15)', textAlign: 'center'
+                    }}>
+                      {modal.type === 'system' ? (
+                        <>
+                          <div style={{fontSize: 22, fontWeight: 600, marginBottom: 16, fontFamily: 'Alibaba Dongfangdakai Regular, serif'}}>
+                            版本选择提醒
+                          </div>
+                          <div style={{fontSize: 18, marginBottom: 24, fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>
+                            检测到您当前系统为 <b>{modal.sys}</b>，而该 Office 套件适合 <b>{modal.expect}</b>。<br/>
+                            确定要继续下载吗？
+                          </div>
+                          <div style={{display: 'flex', justifyContent: 'center', gap: 24}}>
+                            <button
+                              style={{padding: '8px 24px', background: '#3578e5', color: '#fff', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                              onClick={() => setModal(modal && { ...modal, type: 'link' })}
+                            >确定</button>
+                            <button
+                              style={{padding: '8px 24px', background: '#eee', color: '#333', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                              onClick={() => setModal(null)}
+                            >取消</button>
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div style={{fontSize: 22, fontWeight: 600, marginBottom: 16, fontFamily: 'Alibaba Dongfangdakai Regular, serif'}}>
+                            下载链接
+                          </div>
+                          <div style={{fontSize: 18, marginBottom: 16, color: '#d46b08', fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>
+                            建议使用 <b>迅雷</b> 或 <b>电驴</b> 等下载工具打开下方链接。<br/>
+                            如浏览器无法识别，请手动复制到下载工具中。
+                          </div>
+                          <input
+                            value={modal.url}
+                            readOnly
+                            style={{width: '100%', fontSize: 14, fontFamily: 'DingTalk JinBuTi Regular, serif', padding: 8, marginBottom: 16, border: '1px solid #eee', borderRadius: 6}}
+                            onFocus={e => e.target.select()}
+                          />
+                          <div style={{display: 'flex', justifyContent: 'center', gap: 24}}>
+                            <button
+                              style={{padding: '8px 24px', background: '#3578e5', color: '#fff', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                              onClick={() => {
+                                navigator.clipboard.writeText(modal.url);
+                                setCopySuccess(true);
+                                setTimeout(() => setCopySuccess(false), 2000);
+                              }}
+                            >复制链接</button>
+                            {copySuccess && <div style={{color: '#52c41a', marginTop: 8, fontSize: 15}}>复制成功！</div>}
+                            <button
+                              style={{padding: '8px 24px', background: '#eee', color: '#333', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                              onClick={() => setModal(null)}
+                            >关闭</button>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                )}
             </main>
         </div>
     );
