@@ -586,9 +586,9 @@ const huaweiDevTools = [
         url: 'https://developer.harmonyos.com/cn/develop/deveco-studio',
         desc: '面向 HarmonyOS 应用及元服务开发者提供的集成开发环境（IDE），助力高效开发。',
         os: 'Windows/macOS',
-        winUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/b0/v3/zlNr61lFTNmGTYrbhhXvcA/devecostudio-windows-5.1.1.823.zip?HW-CC-KV=V1&HW-CC-Date=20250724T121904Z&HW-CC-Expire=7200&HW-CC-Sign=26172CB8F51A9887C46B8793018CC2789A871330FB7BD0D4E58DA1F34F6BBCB0',
-        macArmUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/55/v3/B9jePD2vTfSKLRIJMEvhGw/devecostudio-mac-arm-5.1.1.823.zip?HW-CC-KV=V1&HW-CC-Date=20250724T122315Z&HW-CC-Expire=7200&HW-CC-Sign=1C3434AF0621D3E26CEE4C37C83DB700987AADA21A38CF7E38180BA049EF8876',
-        macX64Url: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/b6/v3/XMJSUpsCTw6bHvQqVbCrrg/devecostudio-mac-5.1.1.823.zip?HW-CC-KV=V1&HW-CC-Date=20250724T122243Z&HW-CC-Expire=7200&HW-CC-Sign=E0D661FA934153EB739F482F3A2F3AB5B004EAEAF121B42B8FCDAAB67433E2B8',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-studio',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-studio',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/deveco-studio',
         linuxUrl: '',
     },
     {
@@ -596,9 +596,9 @@ const huaweiDevTools = [
         url: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codegenie',
         desc: 'AI 辅助编程工具提供智能知识问答、代码生成、代码解释、元服务卡片生成的能力，新增 UT 代码生成功能，帮助你高效开发鸿蒙应用及元服务。',
         os: 'Windows/macOS',
-        winUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/f6/v3/8qhELaI4R-a20FxU1K1H7g/CodeGenie-5.1.0.828.zip?HW-CC-KV=V1&HW-CC-Date=20250724T122550Z&HW-CC-Expire=7200&HW-CC-Sign=0F8DD47DA5A576CAF9720D561B04D643E17286B0AE16D884B12325A10E8F232A',
-        macArmUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/f6/v3/8qhELaI4R-a20FxU1K1H7g/CodeGenie-5.1.0.828.zip?HW-CC-KV=V1&HW-CC-Date=20250724T122550Z&HW-CC-Expire=7200&HW-CC-Sign=0F8DD47DA5A576CAF9720D561B04D643E17286B0AE16D884B12325A10E8F232A',
-        macX64Url: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/f6/v3/8qhELaI4R-a20FxU1K1H7g/CodeGenie-5.1.0.828.zip?HW-CC-KV=V1&HW-CC-Date=20250724T122550Z&HW-CC-Expire=7200&HW-CC-Sign=0F8DD47DA5A576CAF9720D561B04D643E17286B0AE16D884B12325A10E8F232A',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-codegenie',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-codegenie',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/deveco-codegenie',
         linuxUrl: '',
     },
     {
@@ -606,29 +606,39 @@ const huaweiDevTools = [
         url: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-commandline-get',
         desc: '集合了 HarmonyOS 应用开发所用到的系列工具，包括代码检查 codelinter、三方库包管理 ohpm、命令行解析 hstack、编译构建 hvigorw。',
         os: 'Windows/macOS/Linux',
-        winUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/fc/v3/pbbAh_IYSLWa36hI53EZwA/commandline-tools-windows-x64-5.1.1.823.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123003Z&HW-CC-Expire=7200&HW-CC-Sign=A3010301ED4B19864DAD0FBAE62750E69B8697B7CEBCE9D14F737421F1DB7143',
-        macArmUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/57/v3/iB8npPXfQdCMkkJLMxLsnw/commandline-tools-mac-arm64-5.1.1.823.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123126Z&HW-CC-Expire=7200&HW-CC-Sign=F3BB627909C1F7F39C99DB7A44DC85A43666BEE61AB4B62DC4229DE61CE555A2',
-        macX64Url: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/d9/v3/0a8ZJ9fgTOaqv3LOTpjy1Q/commandline-tools-mac-x64-5.1.1.823.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123055Z&HW-CC-Expire=7200&HW-CC-Sign=E09FD1B55451E2647C6FBD1FC9253A2A29E34EF306D8AB0902350BC33A5EDA38',
-        linuxUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/43/v3/o_Y4Yse1Q92FsF7m4sATVQ/commandline-tools-linux-x64-5.1.1.823.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123032Z&HW-CC-Expire=7200&HW-CC-Sign=23D3B3C9EA17C17B147C62BE88E052A47CC981C898FB65085FBCE12B576E8917',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/command-line-tools-for-hmos',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/command-line-tools-for-hmos',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/command-line-tools-for-hmos',
+        linuxUrl: 'https://developer.huawei.com/consumer/cn/download/command-line-tools-for-hmos',
     },
     {
         name: 'ohpm-repo 5.1.5',
         url: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-overview',
         desc: '一个搭建轻量级的 HarmonyOS 三方库私有仓服务的工具。它与 ohpm 包管理器兼容，用来存储和管理你独有的三方库，以保证这些三方包的私有性。此外，它还方便你在开发团队内部共享和复用这些三方库，从而提高团队的开发效率。',
         os: 'Windows/macOS/Linux',
-        winUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/cc/v3/eJMjKs9yS56BXzeybJnkhA/ohpm-repo-5.1.5.0.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123257Z&HW-CC-Expire=7200&HW-CC-Sign=2456782E3B6E00661A409E4AAC0042E4909684F8F27B38414262944CB5C8C9C4',
-        macArmUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/cc/v3/eJMjKs9yS56BXzeybJnkhA/ohpm-repo-5.1.5.0.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123257Z&HW-CC-Expire=7200&HW-CC-Sign=2456782E3B6E00661A409E4AAC0042E4909684F8F27B38414262944CB5C8C9C4',
-        macX64Url: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/cc/v3/eJMjKs9yS56BXzeybJnkhA/ohpm-repo-5.1.5.0.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123257Z&HW-CC-Expire=7200&HW-CC-Sign=2456782E3B6E00661A409E4AAC0042E4909684F8F27B38414262944CB5C8C9C4',
-        linuxUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/cc/v3/eJMjKs9yS56BXzeybJnkhA/ohpm-repo-5.1.5.0.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123257Z&HW-CC-Expire=7200&HW-CC-Sign=2456782E3B6E00661A409E4AAC0042E4909684F8F27B38414262944CB5C8C9C4',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/ohpm-repo',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/ohpm-repo',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/ohpm-repo',
+        linuxUrl: 'https://developer.huawei.com/consumer/cn/download/ohpm-repo',
     },
     {
         name: 'DevEco Testing 5.1.5.300 Release',
         url: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devecotesting',
         desc: 'DevEco Testing 是一站式的应用测试服务平台。为开发者提供稳定性、性能、功耗等专项测试服务，覆盖应用测试全周期，助力打造高品质应用。此版本支持创建多种应用包格式的任务，可以选择 hap/app/zip 格式的应用包开展测试。',
         os: 'Windows/macOS',
-        winUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/cb/v3/Is8dltK8SACVC-uY66eIzg/devecotesting-windows-5.1.5.300.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123643Z&HW-CC-Expire=7200&HW-CC-Sign=235DD03603D371BC25B8E6CB98F359256165427DA48B48ACC750A8C8315D467D',
-        macArmUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/32/v3/widTo6IiQiKqBreAqowF_Q/devecotesting-mac-arm-5.1.5.300.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123755Z&HW-CC-Expire=7200&HW-CC-Sign=93F891A64430F8872A9491216F40981151DD8C6D121FF2312ABD17DA104A1C88',
-        macX64Url: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/76/v3/HKM-A6ySQVWSTQXSBczOBw/devecotesting-mac-x86-5.1.5.300.zip?HW-CC-KV=V1&HW-CC-Date=20250724T123739Z&HW-CC-Expire=7200&HW-CC-Sign=A8256FDA2EBE2E275C070A0144E0A424F9F27A423187F929A393FAD498FABE9E',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-testing',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-testing',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/deveco-testing',
+        linuxUrl: '',
+    },
+    {
+        name: 'DevEco Testing Hypium',
+        url: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hypium-python-guidelines',
+        desc: 'HarmonyOS NEXT 配套UI自动化测试框架，支持开发者使用 Python 语言为应用编写UI自动化测试脚本，覆盖全场景多形态设备上的自动化用例编写需求。',
+        os: 'Windows/macOS',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-testing-hypium',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-testing-hypium',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/deveco-testing-hypium',
         linuxUrl: '',
     },
     {
@@ -636,10 +646,40 @@ const huaweiDevTools = [
         url: 'https://developer.huawei.com/consumer/cn/doc/cangjie-guides-V5/cj-ide-tools-overview-V5',
         desc: '提供了仓颉编程语言在 HarmonyOS NEXT 应用开发的开发套件。',
         os: 'Windows/macOS/Linux',
-        winUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/65/v3/rQkBY47iSzmVC58f0PaESA/devecostudio-cangjie-plugin-windows-5.0.13.210.zip?HW-CC-KV=V1&HW-CC-Date=20250724T124020Z&HW-CC-Expire=7200&HW-CC-Sign=613E19BE29F23A324E96C922C51630D6304040992D27188F522A6213BF7C71D1',
-        macArmUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/6c/v3/ejGXM5YET0CaN-HlizTbqw/devecostudio-cangjie-plugin-mac-arm-5.0.13.210.zip?HW-CC-KV=V1&HW-CC-Date=20250724T124119Z&HW-CC-Expire=7200&HW-CC-Sign=51D795E1732785987E53DE8A42F7E75273050E9363F498F7301AB2C2E8CB3FB4',
-        macX64Url: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/2d/v3/o72JoKmXTsaxk1u_32DlhA/devecostudio-cangjie-plugin-mac-5.0.13.210.zip?HW-CC-KV=V1&HW-CC-Date=20250724T124105Z&HW-CC-Expire=7200&HW-CC-Sign=0ECEE7933426222B48383E1F30223249D9C7B115AEC5DFA54AB11E2E826B858F',
-        linuxUrl: 'https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_package_901_9/eb/v3/Y1B4lNVMTme467vX8mKoSw/cangjie-linux-x86-ohos-5.0.13.210.zip?HW-CC-KV=V1&HW-CC-Date=20250724T124046Z&HW-CC-Expire=7200&HW-CC-Sign=D9F08235598117ED4E0F2B9C4A1916EC967FDDB9392342EB21282FBE146DA3B1',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-studio-cangjie-plugin',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-studio-cangjie-plugin',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/deveco-studio-cangjie-plugin',
+        linuxUrl: 'https://developer.huawei.com/consumer/cn/download/deveco-studio-cangjie-plugin',
+    },
+    {
+        name: 'ASCF Plugin',
+        url: 'https://developer.huawei.com/consumer/cn/doc/atomic-ascf/use-ide',
+        desc: '提供了在 HarmonyOS NEXT 使用 ASCF 框架开发元服务的开发套件，包括创建 ASCF 元服务项目、转换小程序、编译 ASCF 源代码等能力。',
+        os: 'Windows/macOS/Linux',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/ascf-plugin',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/ascf-plugin',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/ascf-plugin',
+        linuxUrl: 'https://developer.huawei.com/consumer/cn/download/ascf-plugin',
+    },
+    {
+        name: 'HiSmartPerf',
+        url: 'https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/smartperf-tool-overview-0000001581304157',
+        desc: '是华为推出的游戏性能调优工具。工具依托华为在操作系统的技术积累，具备 HarmonyOS NEXT、HarmonyOS 3.1/4.0及以下、Android、快游戏平台性能的测试、分析能力，无需 ROOT 设备，即可通过工具监测，准确、高效地采集到游戏运行时的 CPU、GPU 等性能数据，了解游戏的性能状况。',
+        os: 'Windows/macOS',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/hismartperf',
+        macArmUrl: 'https://developer.huawei.com/consumer/cn/download/hismartperf',
+        macX64Url: 'https://developer.huawei.com/consumer/cn/download/hismartperf',
+        linuxUrl: '',
+    },
+    {
+        name: 'ArkGraphics Editor',
+        url: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-editor',
+        desc: '3D 编辑器 ArkGraphicsEditor 已具备 3D 模型、动画、ShaderGraph 等核心编辑能力，可让设计师、开发者快速接入使用，通过拖拽等操作，完成 3D 场景开发，无代码编写提升效率，利用 3D 编辑器可视化能力，3D 设计效果所见即所得，从 PC 到移动端设备的快速流转，大幅提升 3D 应用开发效率。',
+        os: 'Windows',
+        winUrl: 'https://developer.huawei.com/consumer/cn/download/ark-graphics-editor',
+        macArmUrl: '',
+        macX64Url: '',
+        linuxUrl: '',
     }
 ];
 
@@ -1295,7 +1335,7 @@ function FontsPanel() {
     return (
         <div>
             <div className="alert alert--info" style={{marginBottom: 24}}>
-                <strong>提示：</strong> 这里收录主流品牌字体，点击右侧按钮可下载字体文件。下方样句已用对应字体渲染，供预览效果参考。浏览该界面我建议用户关闭设备的深色模式并将本站调至亮色模式，这样阅览字体的感受会好些。
+                <strong>提示：</strong> 这里收录OPPO、vivo、荣耀、华为、小米、阿里巴巴等主流品牌字体，点击右侧按钮可下载字体文件。下方样句已用对应字体渲染，供预览效果参考。浏览该界面我建议用户关闭设备的深色模式并将本站调至亮色模式，这样阅览字体的感受会好些。
             </div>
             <div style={{margin: '0 0 24px 0', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2}}>
                 <span style={{fontSize: 15, color: '#222', whiteSpace: 'nowrap'}}>自定义样例：</span>
@@ -1444,6 +1484,7 @@ function FontsPanel() {
                     <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
                       <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                         <span style={{fontWeight: 600, fontSize: 18}}>思源黑体 {font.name}</span>
+                        <a href="https://github.com/adobe-fonts/source-han-sans/releases/download/2.005R/09_SourceHanSansSC.zip" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
                       </div>
                       <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: 'Source Han Sans SC, sans-serif', fontWeight: font.weight}}>{sample || defaultSample}</div>
                     </div>
@@ -1467,6 +1508,7 @@ function FontsPanel() {
                   <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
                     <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                       <span style={{fontWeight: 600, fontSize: 18}}>思源宋体 {font.name}</span>
+                      <a href="https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
                     </div>
                     <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: 'Source Han Serif SC, serif', fontWeight: font.weight}}>{sample || defaultSample}</div>
                   </div>
@@ -1786,339 +1828,7 @@ const categories = [
     {
         key: 'software',
         label: '软件资源',
-        content: (
-            <div>
-                <div className="alert alert--info" style={{marginBottom: 24}}>
-                    <strong>提示：</strong> 这里收录主流开发、办公工具及其官方下载地址，后续会不断补充更多软件资源。
-                </div>
-                {/* JetBrains 全家桶卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>JetBrains 全家桶</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {jetbrainsList.map(item => (
-                            <div key={item.url} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 180,
-                                flex: '1 1 180px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                gap: 8
-                            }}>
-                                <a href={item.url} target="_blank" rel="noopener" style={{
-                                    fontWeight: 700,
-                                    fontSize: 16,
-                                    color: '#3578e5',
-                                    textDecoration: 'none',
-                                    marginBottom: 4
-                                }}>{item.name}</a>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                {/* Office办公套件卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Office
-                        办公套件</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {officeList.map(item => (
-                            <div key={item.gen + item.version + item.os} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 220,
-                                flex: '1 1 220px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: 8
-                            }}>
-                                <div style={{
-                                    fontWeight: 700,
-                                    fontSize: 16,
-                                    color: '#3578e5'
-                                }}>{item.gen} {item.version}</div>
-                                <div style={{fontSize: 14}}>位数：{item.arch}</div>
-                                <div style={{fontSize: 14}}>适配系统：{item.os}</div>
-                                <div style={{fontSize: 14}}>维护状态：{item.status}</div>
-                                <div style={{marginTop: 8}}>
-                                    {item.download
-                                        ? <a href={item.download} target="_blank" rel="noopener"
-                                             style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
-                                        : <span style={{color: '#aaa'}}>本站暂未收录，请前往官网购买/下载</span>
-                                    }
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                {/* 华为开发者工具卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>华为开发者工具</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {huaweiDevTools.map(tool => (
-                            <div key={tool.name} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 220,
-                                flex: '1 1 220px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                gap: 8
-                            }}>
-                                <a href={tool.url} target="_blank" rel="noopener" style={{
-                                    fontWeight: 700,
-                                    fontSize: 16,
-                                    color: '#3578e5',
-                                    textDecoration: 'none',
-                                    marginBottom: 4
-                                }}>{tool.name}</a>
-                                <div className="force-black" style={{fontSize: 14}}>{tool.desc}</div>
-                                <div className="force-black" style={{fontSize: 13}}>{tool.os}</div>
-                                <div style={{
-                                    display: 'flex',
-                                    gap: 6,
-                                    marginTop: 8,
-                                    flexWrap: 'wrap',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    minHeight: 0
-                                }}>
-                                    <a href={tool.winUrl || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.winUrl ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 90,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.winUrl ? 'auto' : 'none',
-                                           opacity: tool.winUrl ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>Windows下载</a>
-                                    <a href={tool.macArmUrl || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.macArmUrl ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 100,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.macArmUrl ? 'auto' : 'none',
-                                           opacity: tool.macArmUrl ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>macOS Arm下载</a>
-                                    <a href={tool.macX64Url || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.macX64Url ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 100,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.macX64Url ? 'auto' : 'none',
-                                           opacity: tool.macX64Url ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>macOS x64下载</a>
-                                    <a href={tool.linuxUrl || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.linuxUrl ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 90,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.linuxUrl ? 'auto' : 'none',
-                                           opacity: tool.linuxUrl ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>Linux下载</a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                {/* 微信开发者工具卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>微信开发者工具</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {wechatDevTools.map(tool => (
-                            <div key={tool.name} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 220,
-                                flex: '1 1 220px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                gap: 8
-                            }}>
-                                <a href={tool.url} target="_blank" rel="noopener" style={{
-                                    fontWeight: 700,
-                                    fontSize: 16,
-                                    color: '#3578e5',
-                                    textDecoration: 'none',
-                                    marginBottom: 4
-                                }}>{tool.name}</a>
-                                <div className="force-black" style={{fontSize: 14}}>{tool.desc}</div>
-                                <div className="force-black" style={{fontSize: 13}}>{tool.os}</div>
-                                <div style={{
-                                    display: 'flex',
-                                    gap: 6,
-                                    marginTop: 8,
-                                    flexWrap: 'wrap',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    minHeight: 0
-                                }}>
-                                    <a href={tool.win32Url || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.win32Url ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 90,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.win32Url ? 'auto' : 'none',
-                                           opacity: tool.win32Url ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>Windows 32下载</a>
-                                    <a href={tool.win64Url || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.win64Url ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 90,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.win64Url ? 'auto' : 'none',
-                                           opacity: tool.win64Url ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>Windows 64下载</a>
-                                    <a href={tool.macArmUrl || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.macArmUrl ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 100,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.macArmUrl ? 'auto' : 'none',
-                                           opacity: tool.macArmUrl ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>macOS Arm下载</a>
-                                    <a href={tool.macX64Url || undefined} target="_blank" rel="noopener"
-                                       style={{
-                                           padding: '2px 12px',
-                                           background: tool.macX64Url ? '#3578e5' : '#ccc',
-                                           color: '#fff',
-                                           borderRadius: 4,
-                                           textDecoration: 'none',
-                                           fontSize: 13,
-                                           height: 26,
-                                           lineHeight: '22px',
-                                           minWidth: 100,
-                                           textAlign: 'center',
-                                           pointerEvents: tool.macX64Url ? 'auto' : 'none',
-                                           opacity: tool.macX64Url ? 1 : 0.6,
-                                           border: 'none',
-                                           margin: 0
-                                       }}>macOS x64下载</a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        ),
+        content: null, // 由 ToolsContent 内部渲染
     },
     {
         key: 'others',
@@ -2240,6 +1950,9 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
     const isMobile = typeof window !== 'undefined' ? useIsMobile() : false;
     const current = categories.find(c => c.key === selected);
 
+    // 自定义弹窗状态
+    const [modal, setModal] = useState<null | { url: string; sys: string; expect: string; id?: string; type?: 'system' | 'link' }>(null);
+
     // 切换tab时自动关闭侧边栏
     useEffect(() => {
         if (showSidebar) setShowSidebar(false);
@@ -2248,6 +1961,9 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
 
     // Docusaurus navbar高度，默认60px
     const navbarHeight = 60;
+
+    // 1. 增加复制成功状态
+    const [copySuccess, setCopySuccess] = useState(false);
 
     return (
         <div
@@ -2364,7 +2080,180 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
             )}
             <main style={{flex: 1, padding: '2rem', width: '100%'}}>
                 <h2 style={{marginTop: 0}}>{current?.label}</h2>
-                {selected === 'fonts' ? <FontsPanel /> : current?.content}
+                {/* Office办公套件卡片分组自定义弹窗逻辑 */}
+                {selected === 'software' ? (
+                  <div>
+                    {/* Office办公套件卡片分组（已存在） */}
+                    <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                      <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Office 办公套件</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {officeList.map(item => (
+                          <div key={item.gen + item.version + item.os} style={{
+                              background: '#fff',
+                              borderRadius: 8,
+                              boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                              padding: 20,
+                              minWidth: 220,
+                              flex: '1 1 220px',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: 8
+                          }}>
+                              <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{item.gen} {item.version}</div>
+                              <div style={{fontSize: 14}}>位数：{item.arch}</div>
+                              <div style={{fontSize: 14}}>适配系统：{item.os}</div>
+                              <div style={{fontSize: 14}}>维护状态：{item.status}</div>
+                              <div style={{marginTop: 8}}>
+                                  {item.download
+                                      ? <a
+                                          id={'office-download-' + item.gen + item.version + item.os}
+                                          href={item.download}
+                                          rel="noopener"
+                                          style={{color: '#3578e5', textDecoration: 'none'}}
+                                          onClick={e => {
+                                            e.preventDefault();
+                                            let sys = '';
+                                            if (typeof window !== 'undefined') {
+                                              const ua = window.navigator.userAgent;
+                                              if (/Windows/i.test(ua)) sys = 'Windows';
+                                              else if (/Macintosh|Mac OS X/i.test(ua)) sys = 'macOS';
+                                              else if (/Linux/i.test(ua)) sys = 'Linux';
+                                            }
+                                            if (item.os && sys && item.os !== sys) {
+                                              setModal({ url: item.download, sys, expect: item.os, id: 'office-download-' + item.gen + item.version + item.os, type: 'system' });
+                                            } else {
+                                              setModal({ url: item.download, sys, expect: item.os, id: 'office-download-' + item.gen + item.version + item.os, type: 'link' });
+                                            }
+                                          }}
+                                      >下载</a>
+                                      : <span style={{color: '#aaa'}}>本站暂未收录，请前往官网购买/下载</span>
+                                  }
+                              </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* JetBrains 全家桶卡片分组 */}
+                    <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                      <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>JetBrains 全家桶</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {jetbrainsList.map(item => (
+                          <div key={item.url} style={{
+                            background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: 20, minWidth: 180, flex: '1 1 180px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8
+                          }}>
+                            <a href={item.url} target="_blank" rel="noopener" style={{fontWeight: 700, fontSize: 16, color: '#3578e5', textDecoration: 'none', marginBottom: 4}}>{item.name}</a>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* 华为开发者工具卡片分组 */}
+                    <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                      <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>华为开发者工具</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {huaweiDevTools.map(tool => (
+                          <div key={tool.name} style={{
+                            background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: 20, minWidth: 220, flex: '1 1 220px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8
+                          }}>
+                            <a href={tool.url} target="_blank" rel="noopener" style={{fontWeight: 700, fontSize: 16, color: '#3578e5', textDecoration: 'none', marginBottom: 4}}>{tool.name}</a>
+                            <div className="force-black" style={{fontSize: 14}}>{tool.desc}</div>
+                            <div className="force-black" style={{fontSize: 13}}>{tool.os}</div>
+                            <div style={{display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', minHeight: 0}}>
+                              <a href={tool.winUrl || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.winUrl ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 90, textAlign: 'center', pointerEvents: tool.winUrl ? 'auto' : 'none', opacity: tool.winUrl ? 1 : 0.6, border: 'none', margin: 0}}>Windows下载</a>
+                              <a href={tool.macArmUrl || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.macArmUrl ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 100, textAlign: 'center', pointerEvents: tool.macArmUrl ? 'auto' : 'none', opacity: tool.macArmUrl ? 1 : 0.6, border: 'none', margin: 0}}>macOS Arm下载</a>
+                              <a href={tool.macX64Url || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.macX64Url ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 100, textAlign: 'center', pointerEvents: tool.macX64Url ? 'auto' : 'none', opacity: tool.macX64Url ? 1 : 0.6, border: 'none', margin: 0}}>macOS x64下载</a>
+                              <a href={tool.linuxUrl || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.linuxUrl ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 90, textAlign: 'center', pointerEvents: tool.linuxUrl ? 'auto' : 'none', opacity: tool.linuxUrl ? 1 : 0.6, border: 'none', margin: 0}}>Linux下载</a>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* 微信开发者工具卡片分组 */}
+                    <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                      <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>微信开发者工具</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {wechatDevTools.map(tool => (
+                          <div key={tool.name} style={{
+                            background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: 20, minWidth: 220, flex: '1 1 220px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8
+                          }}>
+                            <a href={tool.url} target="_blank" rel="noopener" style={{fontWeight: 700, fontSize: 16, color: '#3578e5', textDecoration: 'none', marginBottom: 4}}>{tool.name}</a>
+                            <div className="force-black" style={{fontSize: 14}}>{tool.desc}</div>
+                            <div className="force-black" style={{fontSize: 13}}>{tool.os}</div>
+                            <div style={{display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', minHeight: 0}}>
+                              <a href={tool.win32Url || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.win32Url ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 90, textAlign: 'center', pointerEvents: tool.win32Url ? 'auto' : 'none', opacity: tool.win32Url ? 1 : 0.6, border: 'none', margin: 0}}>Windows 32下载</a>
+                              <a href={tool.win64Url || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.win64Url ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 90, textAlign: 'center', pointerEvents: tool.win64Url ? 'auto' : 'none', opacity: tool.win64Url ? 1 : 0.6, border: 'none', margin: 0}}>Windows 64下载</a>
+                              <a href={tool.macArmUrl || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.macArmUrl ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 100, textAlign: 'center', pointerEvents: tool.macArmUrl ? 'auto' : 'none', opacity: tool.macArmUrl ? 1 : 0.6, border: 'none', margin: 0}}>macOS Arm下载</a>
+                              <a href={tool.macX64Url || undefined} target="_blank" rel="noopener" style={{padding: '2px 12px', background: tool.macX64Url ? '#3578e5' : '#ccc', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 13, height: 26, lineHeight: '22px', minWidth: 100, textAlign: 'center', pointerEvents: tool.macX64Url ? 'auto' : 'none', opacity: tool.macX64Url ? 1 : 0.6, border: 'none', margin: 0}}>macOS x64下载</a>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* 弹窗... */}
+                    {modal && (
+                      <div style={{
+                        position: 'fixed', left: 0, top: 0, width: '100vw', height: '100vh',
+                        background: 'rgba(0,0,0,0.35)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center'
+                      }}>
+                        <div style={{
+                          background: '#fff', borderRadius: 12, padding: 32, minWidth: 320, boxShadow: '0 4px 24px rgba(0,0,0,0.15)', textAlign: 'center'
+                        }}>
+                          {modal.type === 'system' ? (
+                            <>
+                              <div style={{fontSize: 22, fontWeight: 600, marginBottom: 16, fontFamily: 'Alibaba Dongfangdakai Regular, serif'}}>
+                                版本选择提醒
+                              </div>
+                              <div style={{fontSize: 18, marginBottom: 24, fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>
+                                检测到您当前系统为 <b>{modal.sys}</b>，而该 Office 套件适合 <b>{modal.expect}</b>。<br/>
+                                确定要继续下载吗？
+                              </div>
+                              <div style={{display: 'flex', justifyContent: 'center', gap: 24}}>
+                                <button
+                                  style={{padding: '8px 24px', background: '#3578e5', color: '#fff', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                                  onClick={() => setModal(modal && { ...modal, type: 'link' })}
+                                >确定</button>
+                                <button
+                                  style={{padding: '8px 24px', background: '#eee', color: '#333', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                                  onClick={() => setModal(null)}
+                                >取消</button>
+                              </div>
+                            </>
+                          ) : (
+                            <>
+                              <div style={{fontSize: 22, fontWeight: 600, marginBottom: 16, fontFamily: 'Alibaba Dongfangdakai Regular, serif'}}>
+                                下载链接
+                              </div>
+                              <div style={{fontSize: 18, marginBottom: 16, color: '#d46b08', fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>
+                                建议使用 <b>迅雷</b> 或 <b>电驴</b> 等下载工具打开下方链接。<br/>
+                                如浏览器无法识别，请手动复制到下载工具中。
+                              </div>
+                              <input
+                                value={modal.url}
+                                readOnly
+                                style={{width: '100%', fontSize: 14, fontFamily: 'DingTalk JinBuTi Regular, serif', padding: 8, marginBottom: 16, border: '1px solid #eee', borderRadius: 6}}
+                                onFocus={e => e.target.select()}
+                              />
+                              <div style={{display: 'flex', justifyContent: 'center', gap: 24}}>
+                                <button
+                                  style={{padding: '8px 24px', background: '#3578e5', color: '#fff', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                                  onClick={() => {
+                                    navigator.clipboard.writeText(modal.url);
+                                    setCopySuccess(true);
+                                    setTimeout(() => setCopySuccess(false), 2000);
+                                  }}
+                                >复制链接</button>
+                                {copySuccess && <div style={{color: '#52c41a', marginTop: 8, fontSize: 15}}>复制成功！</div>}
+                                <button
+                                  style={{padding: '8px 24px', background: '#eee', color: '#333', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                                  onClick={() => setModal(null)}
+                                >关闭</button>
+                              </div>
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ) : (selected === 'fonts' ? <FontsPanel /> : current?.content)}
             </main>
         </div>
     );
@@ -2390,6 +2279,23 @@ export default function Tools() {
 
     return (
         <Layout title="工具库" description="常用镜像源、开发工具、教程网站等资源大全">
+            <style>{`
+              @font-face {
+                font-family: 'Alibaba Dongfangdakai Regular';
+                src: url('/fonts/Alibaba/AlimamaDongFangDaKai-Regular.ttf') format('truetype');
+                font-display: swap;
+              }
+              @font-face {
+                font-family: 'Alimama FangYuanTiVF Thin';
+                src: url('/fonts/Alibaba/AlimamaFangYuanTiVF-Thin.ttf') format('truetype');
+                font-display: swap;
+              }
+              @font-face {
+                font-family: 'DingTalk JinBuTi Regular';
+                src: url('/fonts/Alibaba/DingTalkJinBuTi-Regular.ttf') format('truetype');
+                font-display: swap;
+              }
+            `}</style>
             <ToolsContent selected={selected} setSelected={handleSetSelected}/>
         </Layout>
     );
