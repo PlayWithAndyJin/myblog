@@ -70,3 +70,16 @@ body {
   border-left: none !important;
   border-right: none !important;
 }
+
+[data-theme='dark'] .card-force-black,
+[data-theme='dark'] .force-black {
+  color: #222 !important;
+}
+
+.force-black, .force-black * {
+  color: #222 !important;
+}
+
+.force-black-ignore {
+  color: var(--ifm-color-primary) !important;
+}
