@@ -70,13 +70,11 @@ function AnnouncementBar() {
       <div style={{fontWeight: 400, fontSize: 18, textAlign: 'left', margin: '8px auto 0', maxWidth: 600}}>
         <b style={{fontFamily: 'DingTalk JinBuTi Regular, serif', fontSize: 18}}>本次更新：</b>
         <ul style={{margin: '8px 0 0 0', paddingLeft: 20, fontFamily: 'Alimama FangYuanTiVF Thin, serif', fontSize: 16}}>
-          <li>收录OPPO、vivo、荣耀、华为、小米、阿里巴巴等多品牌字体。</li>
-          <li>收录清华大学、阿里云、中科大、华为云多种类镜像源。</li>
-          <li>收录Windows、Windows Server、macOS、Linux多版本原版非激活系统镜像。</li>
-          <li>收录JetBrains、Office办公套件、华为开发者工具和微信开发者工具。</li>
-          <li>收录多用途多品类UI设计资源网站。</li>
-          <li>收录Docker国内镜像源等其他实用资源。</li>
+          <li>字体资源新增荣耀、vivo、思源黑体、思源宋体和小米的字体，并支持自定义样例渲染。</li>
+          <li>工具库所有页面全面美化，所有资源展示由列表/表格升级为卡片化、模块化风格。</li>
+          <li>操作系统新增收录Windows Server。</li>
         </ul>
+        <p style={{fontSize: 16, margin: '8px 0 0 0', fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>更多更新内容请查看→<a href="/site_update" style={{color: '#3578e5', textDecoration: 'none'}}>更新日志</a></p>
       </div>
     </div>
   );
