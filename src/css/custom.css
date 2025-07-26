@@ -83,3 +83,21 @@ body {
 .force-black-ignore {
   color: var(--ifm-color-primary) !important;
 }
+
+/* 移动端隐藏顶部导航栏 */
+@media (max-width: 768px) {
+  .navbar {
+    display: none !important;
+  }
+  
+  /* 调整主内容区域，移除顶部导航栏占用的空间 */
+  .main-wrapper {
+    padding-top: 0 !important;
+  }
+  
+  /* 确保内容从顶部开始 */
+  main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
