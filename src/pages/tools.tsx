@@ -2553,24 +2553,26 @@ export default function Tools() {
 
     return (
         <Layout title="工具库" description="常用镜像源、开发工具、教程网站等资源大全">
-            <style>{`
-              @font-face {
-                font-family: 'Alibaba Dongfangdakai Regular';
-                src: url('/fonts/Alibaba/AlimamaDongFangDaKai-Regular.ttf') format('truetype');
-                font-display: swap;
-              }
-              @font-face {
-                font-family: 'Alimama FangYuanTiVF Thin';
-                src: url('/fonts/Alibaba/AlimamaFangYuanTiVF-Thin.ttf') format('truetype');
-                font-display: swap;
-              }
-              @font-face {
-                font-family: 'DingTalk JinBuTi Regular';
-                src: url('/fonts/Alibaba/DingTalkJinBuTi-Regular.ttf') format('truetype');
-                font-display: swap;
-              }
-            `}</style>
-            <ToolsContent selected={selected} setSelected={handleSetSelected}/>
+            <div className="tools-page">
+                <style>{`
+                  @font-face {
+                    font-family: 'Alibaba Dongfangdakai Regular';
+                    src: url('/fonts/Alibaba/AlimamaDongFangDaKai-Regular.ttf') format('truetype');
+                    font-display: swap;
+                  }
+                  @font-face {
+                    font-family: 'Alimama FangYuanTiVF Thin';
+                    src: url('/fonts/Alibaba/AlimamaFangYuanTiVF-Thin.ttf') format('truetype');
+                    font-display: swap;
+                  }
+                  @font-face {
+                    font-family: 'DingTalk JinBuTi Regular';
+                    src: url('/fonts/Alibaba/DingTalkJinBuTi-Regular.ttf') format('truetype');
+                    font-display: swap;
+                  }
+                `}</style>
+                <ToolsContent selected={selected} setSelected={handleSetSelected}/>
+            </div>
         </Layout>
     );
 }
