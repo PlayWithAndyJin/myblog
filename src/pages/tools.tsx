@@ -1877,7 +1877,7 @@ const categories = [
                             downloads: {
                                 android: 'https://gitee.com/JXX_CODE/MyBlog/releases/download/v1.0.0/myblog-1.0.0.apk',
                                 ios: null,
-                                harmonyos: null
+                                harmonyos: 'https://gitee.com/JXX_CODE/MyBlog/releases/download/v1.0.0/myblog-default-unsigned.hap'
                             }
                         }
                     ];
@@ -2050,47 +2050,7 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
                 position: 'relative',
             }}
         >
-            {/* 移动端菜单按钮 */}
-            {isMobile && !showSidebar && (
-                <button
-                    onClick={() => setShowSidebar(true)}
-                    style={{
-                        position: 'fixed',
-                        top: navbarHeight + 16,
-                        left: -20, // 只露半个圆
-                        zIndex: 1051,
-                        background: '#3578e5',
-                        color: '#fff',
-                        border: 'none',
-                        borderRadius: '50%',
-                        width: 40,
-                        height: 40,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        fontSize: 22,
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
-                        cursor: 'pointer',
-                        borderLeft: '2px solid #fff', // 增强半圆视觉
-                        transition: 'left .2s',
-                    }}
-                    aria-label="打开菜单"
-                >
-                    <style>{`
-                        @keyframes arrowMove {
-                            0%, 100% { transform: translateX(4px) translateY(-1px); }
-                            50% { transform: translateX(14px) translateY(-1px); }
-                        }
-                    `}</style>
-                    <span style={{
-                        display: 'block', 
-                        lineHeight: 1, 
-                        fontSize: 18, 
-                        fontWeight: 600, 
-                        animation: 'arrowMove 2s ease-in-out infinite'
-                    }}>›</span>
-                </button>
-            )}
+            {/* 移动端菜单按钮 - 已移除 */}
             {/* 侧边栏：桌面端始终显示，移动端抽屉显示 */}
             {(!isMobile || showSidebar) && (
                 <nav
