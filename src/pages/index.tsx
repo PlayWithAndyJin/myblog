@@ -24,7 +24,7 @@ function HomepageHeader() {
       <style>{`
         @media (max-width: 768px) {
           .hero {
-            padding-top: 2rem !important;
+            padding-top: calc(2rem + var(--safe-area-inset-top)) !important;
             padding-bottom: 2rem !important;
           }
           .hero__title {
