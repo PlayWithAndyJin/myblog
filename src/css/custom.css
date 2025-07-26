@@ -10,27 +10,11 @@
   --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  /* 为移动端App预留顶部安全区域 */
-  padding-top: var(--safe-area-inset-top);
-  padding-bottom: var(--safe-area-inset-bottom);
-}
-
-/* 确保内容不被状态栏遮挡 */
-#__docusaurus {
-  min-height: 100vh;
-  padding-top: var(--safe-area-inset-top);
-}
-
 /* 兼容性处理 - 为不支持env()的浏览器提供fallback */
 @supports not (padding-top: env(safe-area-inset-top)) {
-  body {
-    padding-top: 24px; /* 默认状态栏高度 */
-  }
-  #__docusaurus {
-    padding-top: 24px;
+  :root {
+    --safe-area-inset-top: 24px;
+    --safe-area-inset-bottom: 0px;
   }
 }
 
@@ -120,7 +104,7 @@ body {
     display: none !important;
   }
   
-  /* 调整主内容区域，移除顶部导航栏占用的空间，但保留安全区域 */
+  /* 调整主内容区域，移除顶部导航栏占用的空间 */
   .main-wrapper {
     padding-top: 0 !important;
   }
@@ -128,37 +112,32 @@ body {
   /* 确保内容从安全区域开始，不被状态栏遮挡 */
   main {
     margin-top: 0 !important;
-    padding-top: var(--safe-area-inset-top) !important;
+    padding-top: 24px !important; /* 使用适中的状态栏高度 */
   }
 
   /* 首页特殊处理 - 确保Hero区域不被遮挡 */
   .hero {
-    padding-top: var(--safe-area-inset-top) !important;
+    padding-top: calc(2rem + 24px) !important;
   }
 
   /* 工具库页面特殊处理 */
   .tools-page {
-    padding-top: var(--safe-area-inset-top) !important;
-  }
-
-  /* 教程页面特殊处理 */
-  .tutorial-page {
-    padding-top: var(--safe-area-inset-top) !important;
+    padding-top: 24px !important;
   }
 
   /* 文档页面特殊处理 */
   .theme-doc-root {
-    padding-top: var(--safe-area-inset-top) !important;
+    padding-top: 24px !important;
   }
 
   /* 博客页面特殊处理 */
   .theme-blog-root {
-    padding-top: var(--safe-area-inset-top) !important;
+    padding-top: 24px !important;
   }
 
   /* 更新日志页面特殊处理 */
   .site-update-page {
-    padding-top: var(--safe-area-inset-top) !important;
+    padding-top: 24px !important;
   }
 
   /* 隐藏移动端面包屑中的首页链接 */
