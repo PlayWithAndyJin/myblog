@@ -103,7 +103,8 @@ export default function SiteUpdate() {
   const contentColor = colorMode === 'dark' ? '#fff' : '#333';
   return (
     <Layout title="更新日志" description="本站功能与内容更新记录">
-      <main className={styles.projectsContainer}>
+      <div className="site-update-page">
+        <main className={styles.projectsContainer}>
         {/* vivo Sans 常规体、扩展 VF 和阿里妈妈东方大楷字体引入 */}
         <style>{`
           @font-face {
@@ -140,7 +141,8 @@ export default function SiteUpdate() {
             </ul>
           </section>
         ))}
-      </main>
+        </main>
+      </div>
     </Layout>
   );
 } 
