@@ -1329,7 +1329,7 @@ const fontResourceList = [
     },
 ];
 
-function FontsPanel() {
+function FontsPanel({ isMobile, setModal }: { isMobile: boolean; setModal: (modal: any) => void }) {
     const defaultSample = '世界你好 123456 Hello World';
     const [sample, setSample] = React.useState(defaultSample);
     return (
@@ -1372,7 +1372,21 @@ function FontsPanel() {
             `}</style>
                             <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                                 <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                {isMobile ? (
+                                    <button
+                                        onClick={() => setModal({ 
+                                            url: '', 
+                                            sys: '', 
+                                            expect: '', 
+                                            id: 'font-download-' + font.name, 
+                                            type: 'mobile-reminder' 
+                                        })}
+                                        style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                        title="下载字体"
+                                    >⬇</button>
+                                ) : (
+                                    <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                )}
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
                         </div>
@@ -1394,7 +1408,21 @@ function FontsPanel() {
             `}</style>
                             <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                                 <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                {isMobile ? (
+                                    <button
+                                        onClick={() => setModal({ 
+                                            url: '', 
+                                            sys: '', 
+                                            expect: '', 
+                                            id: 'font-download-' + font.name, 
+                                            type: 'mobile-reminder' 
+                                        })}
+                                        style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                        title="下载字体"
+                                    >⬇</button>
+                                ) : (
+                                    <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                )}
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
                         </div>
@@ -1416,7 +1444,21 @@ function FontsPanel() {
             `}</style>
                             <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                                 <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                {isMobile ? (
+                                    <button
+                                        onClick={() => setModal({ 
+                                            url: '', 
+                                            sys: '', 
+                                            expect: '', 
+                                            id: 'font-download-' + font.name, 
+                                            type: 'mobile-reminder' 
+                                        })}
+                                        style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                        title="下载字体"
+                                    >⬇</button>
+                                ) : (
+                                    <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                )}
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
                         </div>
@@ -1438,7 +1480,21 @@ function FontsPanel() {
             `}</style>
                             <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                                 <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                {isMobile ? (
+                                    <button
+                                        onClick={() => setModal({ 
+                                            url: '', 
+                                            sys: '', 
+                                            expect: '', 
+                                            id: 'font-download-' + font.name, 
+                                            type: 'mobile-reminder' 
+                                        })}
+                                        style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                        title="下载字体"
+                                    >⬇</button>
+                                ) : (
+                                    <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                )}
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
                         </div>
@@ -1457,7 +1513,21 @@ function FontsPanel() {
                             <style>{`@font-face { font-family: '${font.name}'; src: url('${font.file}'); font-display: swap; }`}</style>
                             <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                                 <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                <a href="https://developers.vivo.com/doc/d/314fa33cbaec4a93be351cd44757d9d9" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>去官网下载</a>
+                                {isMobile ? (
+                                    <button
+                                        onClick={() => setModal({ 
+                                            url: '', 
+                                            sys: '', 
+                                            expect: '', 
+                                            id: 'font-download-vivo', 
+                                            type: 'mobile-reminder' 
+                                        })}
+                                        style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                        title="去官网下载"
+                                    >⬇</button>
+                                ) : (
+                                    <a href="https://developers.vivo.com/doc/d/314fa33cbaec4a93be351cd44757d9d9" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>去官网下载</a>
+                                )}
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>
                               {font.name.includes('L3') ? '龘 䶮 麤 黷 鱻 灥 鸂 纛' : (sample || font.sample)}
@@ -1484,7 +1554,21 @@ function FontsPanel() {
                     <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
                       <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                         <span style={{fontWeight: 600, fontSize: 18}}>思源黑体 {font.name}</span>
-                        <a href="https://github.com/adobe-fonts/source-han-sans/releases/download/2.005R/09_SourceHanSansSC.zip" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                        {isMobile ? (
+                            <button
+                                onClick={() => setModal({ 
+                                    url: '', 
+                                    sys: '', 
+                                    expect: '', 
+                                    id: 'font-download-source-han-sans', 
+                                    type: 'mobile-reminder' 
+                                })}
+                                style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                title="下载字体"
+                            >⬇</button>
+                        ) : (
+                            <a href="https://github.com/adobe-fonts/source-han-sans/releases/download/2.005R/09_SourceHanSansSC.zip" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                        )}
                       </div>
                       <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: 'Source Han Sans SC, sans-serif', fontWeight: font.weight}}>{sample || defaultSample}</div>
                     </div>
@@ -1508,7 +1592,21 @@ function FontsPanel() {
                   <div key={font.name} style={{marginBottom: 8, borderBottom: '1px solid #eee', paddingBottom: 16}}>
                     <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                       <span style={{fontWeight: 600, fontSize: 18}}>思源宋体 {font.name}</span>
-                      <a href="https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                      {isMobile ? (
+                          <button
+                              onClick={() => setModal({ 
+                                  url: '', 
+                                  sys: '', 
+                                  expect: '', 
+                                  id: 'font-download-source-han-serif', 
+                                  type: 'mobile-reminder' 
+                              })}
+                              style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                              title="下载字体"
+                          >⬇</button>
+                      ) : (
+                          <a href="https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip" target="_blank" rel="noopener" style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                      )}
                     </div>
                     <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: 'Source Han Serif SC, serif', fontWeight: font.weight}}>{sample || defaultSample}</div>
                   </div>
@@ -1530,7 +1628,21 @@ function FontsPanel() {
             `}</style>
                             <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                                 <span style={{fontWeight: 600, fontSize: 18}}>{font.name}</span>
-                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                {isMobile ? (
+                                    <button
+                                        onClick={() => setModal({ 
+                                            url: '', 
+                                            sys: '', 
+                                            expect: '', 
+                                            id: 'font-download-' + font.name, 
+                                            type: 'mobile-reminder' 
+                                        })}
+                                        style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                        title="下载字体"
+                                    >⬇</button>
+                                ) : (
+                                    <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                )}
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>{sample || font.sample}</div>
                         </div>
@@ -1547,7 +1659,21 @@ function FontsPanel() {
             `}</style>
                             <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
                                 <span style={{fontWeight: 600, fontSize: 18}}>{font.name}（生僻字专用）</span>
-                                <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                {isMobile ? (
+                                    <button
+                                        onClick={() => setModal({ 
+                                            url: '', 
+                                            sys: '', 
+                                            expect: '', 
+                                            id: 'font-download-' + font.name, 
+                                            type: 'mobile-reminder' 
+                                        })}
+                                        style={{padding: '8px', background: 'rgba(53, 120, 229, 0.9)', color: '#fff', borderRadius: '50%', textDecoration: 'none', fontSize: 16, border: 'none', cursor: 'pointer', width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(53, 120, 229, 0.3)'}}
+                                        title="下载字体"
+                                    >⬇</button>
+                                ) : (
+                                    <a href={font.file} download style={{padding: '4px 16px', background: '#3578e5', color: '#fff', borderRadius: 4, textDecoration: 'none', fontSize: 14}}>下载</a>
+                                )}
                             </div>
                             <div className="force-black" style={{marginTop: 8, fontSize: 20, fontFamily: `'${font.name}', sans-serif`}}>龘 䶮 麤 黷 鱻 灥 鸂 纛</div>
                         </div>
@@ -1557,6 +1683,8 @@ function FontsPanel() {
         </div>
     );
 }
+
+
 
 const categories = [
     {
@@ -1624,156 +1752,7 @@ const categories = [
     {
         key: 'os',
         label: '操作系统',
-        content: (
-            <div>
-                <div className="alert alert--info" style={{marginBottom: 1}}>
-                    <strong>提示：</strong> 本区收录主流操作系统的官方下载与第三方下载资源，涵盖<strong> Windows、Windows
-                    Server、macOS、Linux </strong>等，方便用户快速获取各系统镜像。部分老旧系统仅提供第三方下载，建议优先选择官方渠道或权威资源。下载Windows
-                    Server的用户请提前安装迅雷，下载链接将使用迅雷进行下载。
-                </div>
-                <div className="alert alert--warning" style={{marginTop: 1, marginBottom: 24}}>
-                    <strong>提示：</strong> 本站提供的系统镜像均为原版非激活系统镜像，且未经人为修改，请勿用于非法用途。
-                </div>
-                {/* Windows 卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>Windows</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {windowsList.map(item => (
-                            <div key={item.version} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 260,
-                                flex: '1 1 260px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: 8
-                            }}>
-                                <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.version}</div>
-                                <div style={{fontSize: 14}}>维护状态：{item.status}</div>
-                                <div style={{fontSize: 14}}>最后更新时间：{item.lastUpdate}</div>
-                                <div style={{marginTop: 8, display: 'flex', gap: 12, alignItems: 'center'}}>
-                                    {item.officialDown
-                                        ? <a href={item.official} target="_blank" rel="noopener"
-                                             style={{color: '#3578e5', textDecoration: 'none'}}>官方下载</a>
-                                        : <span style={{color: '#aaa'}}>已下架</span>
-                                    }
-                                    <span style={{color: '#bbb'}}>|</span>
-                                    <a href={item.third} target="_blank" rel="noopener"
-                                       style={{color: '#3578e5', textDecoration: 'none'}}>迅雷下载</a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
-                        "最后更新时间"字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
-                    </div>
-                </div>
-                {/* macOS 卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>macOS</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {macosList.map(item => (
-                            <div key={item.name} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 260,
-                                flex: '1 1 260px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: 8
-                            }}>
-                                <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.name}</div>
-                                <div style={{fontSize: 14}}>发布时间：{item.releaseDate}</div>
-                                <div style={{fontSize: 14}}>最新版本：{item.latestVersion}</div>
-                                <div style={{fontSize: 14}}>芯片要求：{item.chip}</div>
-                                {item.remark && <div className="force-black" style={{fontSize: 14}}>备注：{item.remark}</div>}
-                                <div style={{marginTop: 8}}>
-                                    <a href={item.download} target="_blank" rel="noopener"
-                                       style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
-                        系统镜像下载来源：sysin.org
-                    </div>
-                </div>
-                {/* Linux 卡片分组 */}
-                <div style={{
-                    marginTop: 32,
-                    marginBottom: 32,
-                    background: '#f6f8fa',
-                    borderRadius: 12,
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                    padding: 24
-                }}>
-                    <h3 style={{
-                        marginTop: 0,
-                        marginBottom: 16,
-                        fontWeight: 700,
-                        fontSize: 22,
-                        color: '#3578e5'
-                    }}>Linux</h3>
-                    <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
-                        {linuxList.map(item => (
-                            <div key={item.url} style={{
-                                background: '#fff',
-                                borderRadius: 8,
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                                padding: 20,
-                                minWidth: 220,
-                                flex: '1 1 220px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: 8,
-                                alignItems: 'center'
-                            }}>
-                                <a href={item.url} target="_blank" rel="noopener" style={{
-                                    fontWeight: 700,
-                                    fontSize: 16,
-                                    color: '#3578e5',
-                                    textDecoration: 'none',
-                                    marginBottom: 4
-                                }}>{item.name}</a>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
-                        由于 Linux 发行版本众多，这里只展示一些。
-                    </div>
-                </div>
-            </div>
-        ),
+        content: null, // 由 ToolsContent 内部渲染
     },
     {
         key: 'software',
@@ -1829,7 +1808,7 @@ const categories = [
     {
         key: 'fonts',
         label: '字体资源',
-        content: <FontsPanel />,
+        content: null, // 由 ToolsContent 内部渲染
     },
     {
         key: 'ui',
@@ -1880,6 +1859,150 @@ const categories = [
             </div>
         ),
     },
+    {
+        key: 'original',
+        label: '原创资源',
+        content: (
+            <div>
+                <div className="alert alert--info" style={{marginBottom: 24}}>
+                    <strong>提示：</strong> 这里收录我个人原创的软件、工具、脚本等资源，都是经过实际项目验证的实用作品。
+                </div>
+                {/* 原创软件数据 */}
+                {(() => {
+                    const originalSoftware = [
+                        {
+                            name: 'MyBlog',
+                            logo: '/img/MyBlog.png', 
+                            desc: '基于 Docusaurus 构建的现代化个人博客应用',
+                            downloads: {
+                                android: 'https://gitee.com/JXX_CODE/MyBlog/releases/download/v1.0.0/myBlog.apk',
+                                ios: null,
+                                harmonyos: null
+                            }
+                        }
+                    ];
+
+                    return (
+                        <div style={{
+                            marginTop: 32,
+                            marginBottom: 32,
+                            background: '#f6f8fa',
+                            borderRadius: 12,
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                            padding: 24
+                        }}>
+                            <h3 style={{
+                                marginTop: 0,
+                                marginBottom: 16,
+                                fontWeight: 700,
+                                fontSize: 22,
+                                color: '#3578e5'
+                            }}>软件</h3>
+                            <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                                {originalSoftware.map((software, index) => (
+                                    <div key={index} style={{
+                                        background: '#fff',
+                                        borderRadius: 8,
+                                        boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                                        padding: 20,
+                                        minWidth: 280,
+                                        flex: '1 1 280px',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        gap: 12
+                                    }}>
+                                        <div style={{fontWeight: 700, fontSize: 16, color: '#3578e5'}}>{software.name}</div>
+                                        {software.logo && (
+                                            <div style={{
+                                                width: 60,
+                                                height: 60,
+                                                borderRadius: 12,
+                                                overflow: 'hidden',
+                                                marginBottom: 8,
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                background: '#f8f9fa',
+                                                border: '1px solid #e9ecef'
+                                            }}>
+                                                <img 
+                                                    src={software.logo} 
+                                                    alt={`${software.name} logo`}
+                                                    style={{
+                                                        width: '100%',
+                                                        height: '100%',
+                                                        objectFit: 'cover'
+                                                    }}
+                                                />
+                                            </div>
+                                        )}
+                                        <div className="force-black" style={{fontSize: 14, marginBottom: 8, textAlign: 'center'}}>{software.desc}</div>
+                                        <div style={{display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center'}}>
+                                            <a 
+                                                href={software.downloads.android} 
+                                                target="_blank" 
+                                                rel="noopener"
+                                                style={{
+                                                    padding: '6px 12px',
+                                                    background: software.downloads.android ? '#3578e5' : '#ccc',
+                                                    color: '#fff',
+                                                    textDecoration: 'none',
+                                                    borderRadius: 4,
+                                                    fontSize: 12,
+                                                    cursor: software.downloads.android ? 'pointer' : 'not-allowed',
+                                                    opacity: software.downloads.android ? 1 : 0.6
+                                                }}
+                                                onClick={!software.downloads.android ? (e) => e.preventDefault() : undefined}
+                                            >
+                                                Android 下载
+                                            </a>
+                                            <a 
+                                                href={software.downloads.ios} 
+                                                target="_blank" 
+                                                rel="noopener"
+                                                style={{
+                                                    padding: '6px 12px',
+                                                    background: software.downloads.ios ? '#3578e5' : '#ccc',
+                                                    color: '#fff',
+                                                    textDecoration: 'none',
+                                                    borderRadius: 4,
+                                                    fontSize: 12,
+                                                    cursor: software.downloads.ios ? 'pointer' : 'not-allowed',
+                                                    opacity: software.downloads.ios ? 1 : 0.6
+                                                }}
+                                                onClick={!software.downloads.ios ? (e) => e.preventDefault() : undefined}
+                                            >
+                                                iOS 下载
+                                            </a>
+                                            <a 
+                                                href={software.downloads.harmonyos} 
+                                                target="_blank" 
+                                                rel="noopener"
+                                                style={{
+                                                    padding: '6px 12px',
+                                                    background: software.downloads.harmonyos ? '#3578e5' : '#ccc',
+                                                    color: '#fff',
+                                                    textDecoration: 'none',
+                                                    borderRadius: 4,
+                                                    fontSize: 12,
+                                                    cursor: software.downloads.harmonyos ? 'pointer' : 'not-allowed',
+                                                    opacity: software.downloads.harmonyos ? 1 : 0.6
+                                                }}
+                                                onClick={!software.downloads.harmonyos ? (e) => e.preventDefault() : undefined}
+                                            >
+                                                HarmonyOS NEXT 下载
+                                            </a>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    );
+                })()}
+            </div>
+        ),
+    },
 ];
 
 function useIsMobile() {
@@ -1901,7 +2024,7 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
     const current = categories.find(c => c.key === selected);
 
     // 自定义弹窗状态
-    const [modal, setModal] = useState<null | { url: string; sys: string; expect: string; id?: string; type?: 'system' | 'link' }>(null);
+    const [modal, setModal] = useState<null | { url: string; sys: string; expect: string; id?: string; type?: 'system' | 'link' | 'mobile-reminder' }>(null);
 
     // 切换tab时自动关闭侧边栏
     useEffect(() => {
@@ -1928,7 +2051,7 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
             }}
         >
             {/* 移动端菜单按钮 */}
-            {isMobile && (
+            {isMobile && !showSidebar && (
                 <button
                     onClick={() => setShowSidebar(true)}
                     style={{
@@ -1953,7 +2076,19 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
                     }}
                     aria-label="打开菜单"
                 >
-                    <span style={{display: 'block', lineHeight: 1}}>&#9776;</span>
+                    <style>{`
+                        @keyframes arrowMove {
+                            0%, 100% { transform: translateX(4px) translateY(-1px); }
+                            50% { transform: translateX(14px) translateY(-1px); }
+                        }
+                    `}</style>
+                    <span style={{
+                        display: 'block', 
+                        lineHeight: 1, 
+                        fontSize: 18, 
+                        fontWeight: 600, 
+                        animation: 'arrowMove 2s ease-in-out infinite'
+                    }}>›</span>
                 </button>
             )}
             {/* 侧边栏：桌面端始终显示，移动端抽屉显示 */}
@@ -2137,75 +2272,177 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
                         ))}
                       </div>
                     </div>
-                    {/* 弹窗... */}
-                    {modal && (
-                      <div style={{
-                        position: 'fixed', left: 0, top: 0, width: '100vw', height: '100vh',
-                        background: 'rgba(0,0,0,0.35)', zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center'
-                      }}>
-                        <div style={{
-                          background: '#fff', borderRadius: 12, padding: 32, minWidth: 320, boxShadow: '0 4px 24px rgba(0,0,0,0.15)', textAlign: 'center'
-                        }}>
-                          {modal.type === 'system' ? (
-                            <>
-                              <div style={{fontSize: 22, fontWeight: 600, marginBottom: 16, fontFamily: 'Alibaba Dongfangdakai Regular, serif'}}>
-                                版本选择提醒
-                              </div>
-                              <div style={{fontSize: 18, marginBottom: 24, fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>
-                                检测到您当前系统为 <b>{modal.sys}</b>，而该 Office 套件适合 <b>{modal.expect}</b>。<br/>
-                                确定要继续下载吗？
-                              </div>
-                              <div style={{display: 'flex', justifyContent: 'center', gap: 24}}>
-                                <button
-                                  style={{padding: '8px 24px', background: '#3578e5', color: '#fff', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
-                                  onClick={() => setModal(modal && { ...modal, type: 'link' })}
-                                >确定</button>
-                                <button
-                                  style={{padding: '8px 24px', background: '#eee', color: '#333', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
-                                  onClick={() => setModal(null)}
-                                >取消</button>
-                              </div>
-                            </>
-                          ) : (
-                            <>
-                              <div style={{fontSize: 22, fontWeight: 600, marginBottom: 16, fontFamily: 'Alibaba Dongfangdakai Regular, serif'}}>
-                                下载链接
-                              </div>
-                              <div style={{fontSize: 18, marginBottom: 16, color: '#d46b08', fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>
-                                建议使用 <b>迅雷</b> 或 <b>电驴</b> 等下载工具打开下方链接。<br/>
-                                如浏览器无法识别，请手动复制到下载工具中。
-                              </div>
-                              <input
-                                value={modal.url}
-                                readOnly
-                                style={{width: '100%', fontSize: 14, fontFamily: 'DingTalk JinBuTi Regular, serif', padding: 8, marginBottom: 16, border: '1px solid #eee', borderRadius: 6}}
-                                onFocus={e => e.target.select()}
-                              />
-                              <div style={{display: 'flex', justifyContent: 'center', gap: 24}}>
-                                <button
-                                  style={{padding: '8px 24px', background: '#3578e5', color: '#fff', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
-                                  onClick={() => {
-                                    navigator.clipboard.writeText(modal.url);
-                                    setCopySuccess(true);
-                                    setTimeout(() => setCopySuccess(false), 2000);
-                                  }}
-                                >复制链接</button>
-                                {copySuccess && <div style={{color: '#52c41a', marginTop: 8, fontSize: 15}}>复制成功！</div>}
-                                <button
-                                  style={{padding: '8px 24px', background: '#eee', color: '#333', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
-                                  onClick={() => setModal(null)}
-                                >关闭</button>
-                              </div>
-                            </>
-                          )}
-                        </div>
-                      </div>
-                    )}
+
                   </div>
                 ) : selected === 'os' ? (
                   <>
-                    {categories.find(c => c.key === 'os')?.content}
-                    <div style={{marginTop: 32, marginBottom: 32, background: '#f6f8fa', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.04)', padding: 24}}>
+                    <div className="alert alert--info" style={{marginBottom: 1}}>
+                      <strong>提示：</strong> 本区收录主流操作系统的官方下载与第三方下载资源，涵盖<strong> Windows、Windows
+                      Server、macOS、Linux </strong>等，方便用户快速获取各系统镜像。部分老旧系统仅提供第三方下载，建议优先选择官方渠道或权威资源。下载Windows
+                      Server的用户请提前安装迅雷，下载链接将使用迅雷进行下载。
+                    </div>
+                    <div className="alert alert--warning" style={{marginTop: 1, marginBottom: 24}}>
+                      <strong>提示：</strong> 本站提供的系统镜像均为原版非激活系统镜像，且未经人为修改，请勿用于非法用途。
+                    </div>
+                    {/* Windows 卡片分组 */}
+                    <div style={{
+                      marginTop: 32,
+                      marginBottom: 32,
+                      background: '#f6f8fa',
+                      borderRadius: 12,
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      padding: 24
+                    }}>
+                      <h3 style={{
+                        marginTop: 0,
+                        marginBottom: 16,
+                        fontWeight: 700,
+                        fontSize: 22,
+                        color: '#3578e5'
+                      }}>Windows</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {windowsList.map(item => (
+                          <div key={item.version} style={{
+                            background: '#fff',
+                            borderRadius: 8,
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                            padding: 20,
+                            minWidth: 260,
+                            flex: '1 1 260px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: 8
+                          }}>
+                            <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.version}</div>
+                            <div style={{fontSize: 14}}>维护状态：{item.status}</div>
+                            <div style={{fontSize: 14}}>最后更新时间：{item.lastUpdate}</div>
+                            <div style={{marginTop: 8, display: 'flex', gap: 12, alignItems: 'center'}}>
+                              {item.officialDown
+                                ? <a href={item.official} target="_blank" rel="noopener"
+                                     style={{color: '#3578e5', textDecoration: 'none'}}>官方下载</a>
+                                : <span style={{color: '#aaa'}}>已下架</span>
+                              }
+                              <span style={{color: '#bbb'}}>|</span>
+                              {isMobile ? (
+                                <a
+                                  href={item.third}
+                                  rel="noopener"
+                                  style={{color: '#3578e5', textDecoration: 'none'}}
+                                  onClick={e => {
+                                    e.preventDefault();
+                                    setModal({ url: item.third, sys: '', expect: '', id: 'windows-download-' + item.version, type: 'link' });
+                                  }}
+                                >迅雷下载</a>
+                              ) : (
+                                <a href={item.third} target="_blank" rel="noopener"
+                                   style={{color: '#3578e5', textDecoration: 'none'}}>迅雷下载</a>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
+                        "最后更新时间"字段：若官方已停止维护，则为第三方资源的最后更新日期；若官方仍在维护，则为官方的最后更新时间。<br/>
+                      </div>
+                    </div>
+                    {/* macOS 卡片分组 */}
+                    <div style={{
+                      marginTop: 32,
+                      marginBottom: 32,
+                      background: '#f6f8fa',
+                      borderRadius: 12,
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      padding: 24
+                    }}>
+                      <h3 style={{
+                        marginTop: 0,
+                        marginBottom: 16,
+                        fontWeight: 700,
+                        fontSize: 22,
+                        color: '#3578e5'
+                      }}>macOS</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {macosList.map(item => (
+                          <div key={item.name} style={{
+                            background: '#fff',
+                            borderRadius: 8,
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                            padding: 20,
+                            minWidth: 260,
+                            flex: '1 1 260px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: 8
+                          }}>
+                            <div style={{fontWeight: 700, fontSize: 18, color: '#3578e5'}}>{item.name}</div>
+                            <div style={{fontSize: 14}}>发布时间：{item.releaseDate}</div>
+                            <div style={{fontSize: 14}}>最新版本：{item.latestVersion}</div>
+                            <div style={{fontSize: 14}}>芯片要求：{item.chip}</div>
+                            {item.remark && <div className="force-black" style={{fontSize: 14}}>备注：{item.remark}</div>}
+                            <div style={{marginTop: 8}}>
+                              <a href={item.download} target="_blank" rel="noopener"
+                                 style={{color: '#3578e5', textDecoration: 'none'}}>下载</a>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
+                        系统镜像下载来源：sysin.org
+                      </div>
+                    </div>
+                    {/* Linux 卡片分组 */}
+                    <div style={{
+                      marginTop: 32,
+                      marginBottom: 32,
+                      background: '#f6f8fa',
+                      borderRadius: 12,
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      padding: 24
+                    }}>
+                      <h3 style={{
+                        marginTop: 0,
+                        marginBottom: 16,
+                        fontWeight: 700,
+                        fontSize: 22,
+                        color: '#3578e5'
+                      }}>Linux</h3>
+                      <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
+                        {linuxList.map(item => (
+                          <div key={item.url} style={{
+                            background: '#fff',
+                            borderRadius: 8,
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                            padding: 20,
+                            minWidth: 220,
+                            flex: '1 1 220px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: 8,
+                            alignItems: 'center'
+                          }}>
+                            <a href={item.url} target="_blank" rel="noopener" style={{
+                              fontWeight: 700,
+                              fontSize: 16,
+                              color: '#3578e5',
+                              textDecoration: 'none',
+                              marginBottom: 4
+                            }}>{item.name}</a>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="os-table-note" style={{fontSize: 13, lineHeight: 1.7, marginTop: 20}}>
+                        由于 Linux 发行版本众多，这里只展示一些。
+                      </div>
+                    </div>
+                    {/* Windows Server 卡片分组 */}
+                    <div style={{
+                      marginTop: 32,
+                      marginBottom: 32,
+                      background: '#f6f8fa',
+                      borderRadius: 12,
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+                      padding: 24
+                    }}>
                       <h3 style={{marginTop: 0, marginBottom: 16, fontWeight: 700, fontSize: 22, color: '#3578e5'}}>Windows Server</h3>
                       <div style={{display: 'flex', flexWrap: 'wrap', gap: 24}}>
                         {windowsServerList.map(item => (
@@ -2250,8 +2487,8 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
                       </div>
                     </div>
                   </>
-                ) : selected === 'fonts' ? <FontsPanel /> : current?.content}
-                {/* 弹窗... */}
+                ) : selected === 'fonts' ? <FontsPanel isMobile={isMobile} setModal={setModal} /> : current?.content}
+                {/* 弹窗 */}
                 {modal && (
                   <div style={{
                     position: 'fixed', left: 0, top: 0, width: '100vw', height: '100vh',
@@ -2278,6 +2515,22 @@ function ToolsContent({selected, setSelected}: { selected: string; setSelected: 
                               style={{padding: '8px 24px', background: '#eee', color: '#333', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
                               onClick={() => setModal(null)}
                             >取消</button>
+                          </div>
+                        </>
+                      ) : modal.type === 'mobile-reminder' ? (
+                        <>
+                          <div style={{fontSize: 22, fontWeight: 600, marginBottom: 16, fontFamily: 'Alibaba Dongfangdakai Regular, serif'}}>
+                            下载提醒
+                          </div>
+                          <div style={{fontSize: 18, marginBottom: 24, fontFamily: 'Alimama FangYuanTiVF Thin, serif'}}>
+                            检测到您正在使用移动端设备。<br/>
+                            为了更好的下载体验，建议您移步至网页端下载。
+                          </div>
+                          <div style={{display: 'flex', justifyContent: 'center', gap: 24}}>
+                            <button
+                              style={{padding: '8px 24px', background: '#3578e5', color: '#fff', border: 'none', borderRadius: 6, fontSize: 15, cursor: 'pointer'}}
+                              onClick={() => setModal(null)}
+                            >知道了</button>
                           </div>
                         </>
                       ) : (
