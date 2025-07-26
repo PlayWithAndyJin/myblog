@@ -156,6 +156,11 @@ body {
     padding-top: var(--safe-area-inset-top) !important;
   }
 
+  /* 更新日志页面特殊处理 */
+  .site-update-page {
+    padding-top: var(--safe-area-inset-top) !important;
+  }
+
   /* 隐藏移动端面包屑中的首页链接 */
   .theme-doc-breadcrumbs .breadcrumbs__item:first-child {
     display: none !important;
