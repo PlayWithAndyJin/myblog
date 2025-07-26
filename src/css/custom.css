@@ -100,4 +100,18 @@ body {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
+
+  /* 隐藏移动端面包屑中的首页链接 */
+  .theme-doc-breadcrumbs .breadcrumbs__item:first-child {
+    display: none !important;
+  }
+  /* 隐藏移动端面包屑中的首页分隔符 */
+  .theme-doc-breadcrumbs .breadcrumbs__item:first-child + .breadcrumbs__separator {
+    display: none !important;
+  }
+
+  /* 移动端隐藏底部footer版权信息 */
+  .footer {
+    display: none !important;
+  }
 }
