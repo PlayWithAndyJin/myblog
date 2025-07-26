@@ -1875,7 +1875,7 @@ const categories = [
                             logo: '/img/MyBlog.png', 
                             desc: '基于 Docusaurus 构建的现代化个人博客应用',
                             downloads: {
-                                android: 'https://gitee.com/JXX_CODE/MyBlog/releases/download/v1.0.0/myBlog.apk',
+                                android: 'https://gitee.com/JXX_CODE/MyBlog/releases/download/v1.0.0/myblog-1.0.0.apk',
                                 ios: null,
                                 harmonyos: null
                             }
